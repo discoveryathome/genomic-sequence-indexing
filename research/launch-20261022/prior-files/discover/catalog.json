@@ -1,0 +1,148 @@
+{
+  "schema": "discover-catalog/v0",
+  "priority_revision": 3,
+  "assessed_on": "2026-10-22",
+  "status": "Open for local pre-release trials and expert-agent review",
+  "tracks": [
+    {
+      "id": "replication",
+      "weight": 25,
+      "tasks": [
+        {
+          "id": "replication",
+          "question": "Produce one verified exact-count handoff",
+          "starting_points": [
+            "FIRST_TASKS.md",
+            "EVALUATION.md",
+            "research/distribution-prep-20261022/STATUS.md"
+          ],
+          "methods": [
+            "bounded experiment",
+            "reproduction",
+            "scoped review"
+          ],
+          "acceptance_gate": "candidate.json and handoff.json; run tools/verify_count.py. Equal counts with no speed improvement complete the task.",
+          "first_step": {
+            "command": [
+              "python",
+              "tools/check.py",
+              "--quick"
+            ],
+            "expected": "Current source and evidence identities pass; intake open."
+          },
+          "bottleneck_link": "research/distribution-prep-20261022/STATUS.md",
+          "first_experiment": "python tools/contribute.py --case AL123456.3 --seed 419 --out research/my-first-trial",
+          "scope_change_triggers": [
+            "Record a separate protocol before expanding the declared experiment."
+          ],
+          "budget": "30 minutes; built-in 96-query panel and five timing rounds"
+        }
+      ]
+    },
+    {
+      "id": "compressed-baseline",
+      "weight": 25,
+      "tasks": [
+        {
+          "id": "compressed-baseline",
+          "question": "Audit the SDSL FM-index comparison",
+          "starting_points": [
+            "FIRST_TASKS.md",
+            "EVALUATION.md",
+            "research/distribution-prep-20261022/STATUS.md"
+          ],
+          "methods": [
+            "bounded experiment",
+            "reproduction",
+            "scoped review"
+          ],
+          "acceptance_gate": "Compare two-strand, overlapping, literal-N and contig-boundary semantics; report index bytes, construction/load time and all query mismatches. The standalone runner has separate dependency terms.",
+          "first_step": {
+            "command": [
+              "python",
+              "tools/check.py",
+              "--quick"
+            ],
+            "expected": "Current source and evidence identities pass; intake open."
+          },
+          "bottleneck_link": "research/distribution-prep-20261022/STATUS.md",
+          "first_experiment": "python tools/check.py --quick",
+          "scope_change_triggers": [
+            "Record a separate protocol before expanding the declared experiment."
+          ],
+          "budget": "60 minutes; one corpus, fixed configuration and query panel"
+        }
+      ]
+    },
+    {
+      "id": "break-even",
+      "weight": 25,
+      "tasks": [
+        {
+          "id": "break-even",
+          "question": "Find the persisted cache break-even batch size",
+          "starting_points": [
+            "FIRST_TASKS.md",
+            "EVALUATION.md",
+            "research/distribution-prep-20261022/STATUS.md"
+          ],
+          "methods": [
+            "bounded experiment",
+            "reproduction",
+            "scoped review"
+          ],
+          "acceptance_gate": "Report warm count time, startup including hashing, peak RSS and byte counts. A regression at every batch size is a complete outcome. Generated queries remain workload probes, not real application traces.",
+          "first_step": {
+            "command": [
+              "python",
+              "tools/check.py",
+              "--quick"
+            ],
+            "expected": "Current source and evidence identities pass; intake open."
+          },
+          "bottleneck_link": "research/distribution-prep-20261022/STATUS.md",
+          "first_experiment": "python tools/check.py --quick",
+          "scope_change_triggers": [
+            "Record a separate protocol before expanding the declared experiment."
+          ],
+          "budget": "60 minutes; fixed batches 1, 100, 10000 and 100000; three randomized paired processes"
+        }
+      ]
+    },
+    {
+      "id": "workload",
+      "weight": 25,
+      "tasks": [
+        {
+          "id": "workload",
+          "question": "Specify a real exact-count use case",
+          "starting_points": [
+            "FIRST_TASKS.md",
+            "EVALUATION.md",
+            "research/distribution-prep-20261022/STATUS.md"
+          ],
+          "methods": [
+            "bounded experiment",
+            "reproduction",
+            "scoped review"
+          ],
+          "acceptance_gate": "Document query lengths, batch sizes, repeats, literal-N policy, memory budget and permitted trace provenance. No biological-effect inference; external contact needs explicit instruction.",
+          "first_step": {
+            "command": [
+              "python",
+              "tools/check.py",
+              "--quick"
+            ],
+            "expected": "Current source and evidence identities pass; intake open."
+          },
+          "bottleneck_link": "research/distribution-prep-20261022/STATUS.md",
+          "first_experiment": "python tools/pick.py --task workload",
+          "scope_change_triggers": [
+            "Record a separate protocol before expanding the declared experiment."
+          ],
+          "budget": "30 minutes; one sourced workload definition"
+        }
+      ]
+    }
+  ]
+}

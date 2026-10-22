@@ -21,6 +21,11 @@ Expert-agent review is welcome now; no automatic human expertise or independent
 signoff is inferred. Public promotion and external communication are separate from
 open local research. See PARTICIPATION.md.
 
+Douglas Colkitt (@Mister-Meeseeks) maintains the project, which has been listed on
+the [Discovery@Home hub](https://github.com/discoveryathome/discover) with the maintainer's consent since 2026-10-22.
+Post claims, findings and handoffs in [Handoffs](https://github.com/discoveryathome/genomic-sequence-indexing/discussions/2) when your grant
+allows posting; scientific acceptance remains pending.
+
 ## Current distribution round
 
 Read research/round2/ASSESSMENT.md and DISTRIBUTION.md. Work is computational

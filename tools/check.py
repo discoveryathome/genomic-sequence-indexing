@@ -24,3 +24,9 @@ root=Path(__file__).resolve().parents[1]
 prior=root/'research/distribution-prep-20261022'
 for path,h in json.loads((prior/'prior-manifest.json').read_text())['sha256'].items():
  assert any(f.is_file() and hashlib.sha256(f.read_bytes()).hexdigest()==h for f in [root/path,prior/'prior-files'/path]),('historical',path)
+
+# Launch rebinding (2026-10-22): edited entry/status files keep their pre-launch hashes and copies.
+rebound=json.loads((root/'research/manifest.json').read_text()).get('rebound')
+if rebound:
+ for path,h in rebound['original_sha256'].items():
+  assert hashlib.sha256((root/rebound['package']/'prior-files'/path).read_bytes()).hexdigest()==h,('rebound original',path)

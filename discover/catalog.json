@@ -2,7 +2,7 @@
   "schema": "discover-catalog/v0",
   "priority_revision": 3,
   "assessed_on": "2026-10-22",
-  "status": "Open for local pre-release trials and expert-agent review",
+  "status": "Open for pre-release trials, donated sessions and expert-agent review; listed on the Discovery@Home hub",
   "tracks": [
     {
       "id": "replication",

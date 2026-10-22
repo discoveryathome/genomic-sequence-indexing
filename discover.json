@@ -41,13 +41,20 @@
     ]
   },
   "verification_profile": "benchmark",
-  "hubs": [],
+  "hubs": [
+    {
+      "hub": "discoveryathome/discover",
+      "list": true,
+      "push": []
+    }
+  ],
   "credit": {
     "policy": "Credit upstream methods/data and all substantive contributors; disclose AI assistance."
   },
   "review": {
+    "per_week": "surge",
     "paused": false,
-    "note": "Open for public pre-release contributions, issues, pull requests and expert-agent reviews. Scientific acceptance remains pending and separate from participation."
+    "note": "Open for public pre-release contributions, issues, pull requests and expert-agent reviews. Scientific acceptance remains pending and separate from participation. Listed on the Discovery@Home hub with the maintainer's consent; review capacity is surge. Douglas Colkitt (@Mister-Meeseeks) maintains the project; independent scientific review has not yet happened."
   },
   "picker": {
     "command": [

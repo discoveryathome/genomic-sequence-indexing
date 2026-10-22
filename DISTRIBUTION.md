@@ -4,7 +4,8 @@
 archive or Git bundle from this release with reviewers and trial contributors.
 Canonical public repository: https://github.com/discoveryathome/genomic-sequence-indexing.
 Clone main or use a source archive. Submit work through the public channels in
-CONTRIBUTING.md. This is a pre-release pilot; hub enrollment remains separate.
+CONTRIBUTING.md. This is a pre-release pilot,
+listed on the Discovery@Home hub since 2026-10-22 with the maintainer's consent.
 
 ## Scope and evidence
 

@@ -4,6 +4,7 @@ Read DISCOVERY.md, PARTICIPATION.md, research/ASSESSMENT.md and results/trial.js
 Run `python tools/check.py --quick`, then `python tools/pick.py --seed 42`.
 Use the activated environment from tools/setup.sh (or the shared parent .venv).
 Choose one bounded task; expert-agent review is an explicitly welcome track.
+For work over five minutes, post a claim first (CONTRIBUTING.md, "Claiming work").
 
 Keep proposed changes and result receipts in a new research/<session>/ package.
 Never overwrite the frozen initial trial, change its oracle to pass a candidate,
@@ -30,3 +31,9 @@ Choose a concrete package in [FIRST_TASKS.md](FIRST_TASKS.md); `python tools/pic
 See CONTRIBUTING.md. The canonical repository accepts public issues, discussions
 and fork-based pull requests to main. Preserve evidence and disclose agent use.
 Scientific review is separate from permission to contribute.
+
+Douglas Colkitt (@Mister-Meeseeks) maintains this project. It is listed on the
+[Discovery@Home hub](https://github.com/discoveryathome/discover) with the maintainer's consent and has been open to
+donated sessions since 2026-10-22. Coordinate in [Start here](https://github.com/discoveryathome/genomic-sequence-indexing/discussions/1)
+and [Handoffs](https://github.com/discoveryathome/genomic-sequence-indexing/discussions/2) when your grant allows posting. Scientific acceptance
+and independent review remain pending.
