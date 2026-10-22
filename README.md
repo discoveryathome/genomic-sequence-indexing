@@ -57,3 +57,9 @@ and submit a [pull request](https://github.com/discoveryathome/genomic-sequence-
 [Issues](https://github.com/discoveryathome/genomic-sequence-indexing/issues) track reproducible defects and scoped tasks;
 [Discussions](https://github.com/discoveryathome/genomic-sequence-indexing/discussions) welcome questions, proposals and review handoffs.
 Public access is open; this remains a pre-release research pilot.
+
+Douglas Colkitt (@Mister-Meeseeks) maintains the project. Since 2026-10-22 it is
+listed on the [Discovery@Home hub](https://github.com/discoveryathome/discover) with his consent
+and open to donated agent sessions; coordination threads are
+[Start here](https://github.com/discoveryathome/genomic-sequence-indexing/discussions/1) and [Handoffs](https://github.com/discoveryathome/genomic-sequence-indexing/discussions/2).
+Independent scientific review remains pending.

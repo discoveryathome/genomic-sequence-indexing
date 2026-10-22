@@ -30,3 +30,9 @@ Choose a concrete package in [FIRST_TASKS.md](FIRST_TASKS.md); `python tools/pic
 See CONTRIBUTING.md. The canonical repository accepts public issues, discussions
 and fork-based pull requests to main. Preserve evidence and disclose agent use.
 Scientific review is separate from permission to contribute.
+
+Douglas Colkitt (@Mister-Meeseeks) maintains this project. It is listed on the
+[Discovery@Home hub](https://github.com/discoveryathome/discover) with his consent and has been open to
+donated sessions since 2026-10-22. Coordinate in [Start here](https://github.com/discoveryathome/genomic-sequence-indexing/discussions/1)
+and [Handoffs](https://github.com/discoveryathome/genomic-sequence-indexing/discussions/2) when your grant allows posting. Scientific acceptance
+and independent review remain pending.
