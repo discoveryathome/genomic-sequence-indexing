@@ -1,0 +1,36 @@
+{
+  "project": "Jellyfish",
+  "commit": "43b1ab27abdb8c9399c386cc998bb9fd33648412",
+  "files": [
+    {
+      "path": "sub_commands/query_main.cc",
+      "url": "https://raw.githubusercontent.com/gmarcais/Jellyfish/43b1ab27abdb8c9399c386cc998bb9fd33648412/sub_commands/query_main.cc",
+      "sha256": "e0a6a2e18c7c980e6d07b6bf71eaa9d3076da5af1ae77eb9dc8b312d995817ef"
+    },
+    {
+      "path": "sub_commands/query_main_cmdline.yaggo",
+      "url": "https://raw.githubusercontent.com/gmarcais/Jellyfish/43b1ab27abdb8c9399c386cc998bb9fd33648412/sub_commands/query_main_cmdline.yaggo",
+      "sha256": "665c8114e4d6ef8bddd3324096a018a1d9178aa5ba2097642440c27f14bde5b4"
+    },
+    {
+      "path": "include/jellyfish/mer_iterator.hpp",
+      "url": "https://raw.githubusercontent.com/gmarcais/Jellyfish/43b1ab27abdb8c9399c386cc998bb9fd33648412/include/jellyfish/mer_iterator.hpp",
+      "sha256": "5c68b2fa4e4cfba94e824bc3a6520a14d73dd27fbfaa1b0a1beaddd33340067b"
+    },
+    {
+      "path": "include/jellyfish/mer_overlap_sequence_parser.hpp",
+      "url": "https://raw.githubusercontent.com/gmarcais/Jellyfish/43b1ab27abdb8c9399c386cc998bb9fd33648412/include/jellyfish/mer_overlap_sequence_parser.hpp",
+      "sha256": "1115a2e92b644a5c591e67fccc6d75f3dcc7c15b33788db6f9534ee140d806b4"
+    },
+    {
+      "path": "include/jellyfish/mer_dna.hpp",
+      "url": "https://raw.githubusercontent.com/gmarcais/Jellyfish/43b1ab27abdb8c9399c386cc998bb9fd33648412/include/jellyfish/mer_dna.hpp",
+      "sha256": "91d2b8cd426a606974e119cf0915f1ec67693f62efa94acc505bf7479b89a64b"
+    },
+    {
+      "path": "doc/UserGuide.lyx",
+      "url": "https://raw.githubusercontent.com/gmarcais/Jellyfish/43b1ab27abdb8c9399c386cc998bb9fd33648412/doc/UserGuide.lyx",
+      "sha256": "6f0f2fccb04e23d28821b13691615410d7a952d496a2ddd940d8080cb5bdf46d"
+    }
+  ]
+}

@@ -72,7 +72,7 @@ def main():
     qs = [item["sequence"] for item in sample]
     # Independently count canonical windows in forward records. The project's
     # oracle instead searches each original record and its reverse complement.
-    canonical_counts = dict.fromkeys(qs, 0)
+    canonical_counts = dict.fromkeys(frequency, 0)
     full_windows = 0
     for _, _, word in windows(records, k):
         full_windows += 1
@@ -83,18 +83,33 @@ def main():
         raise ValueError("Canonical and both-strand semantics disagree")
     generation_and_oracle_seconds = time.perf_counter() - started
     libs = libraries()
-    encoded = encode(qs)
+    all_qs = [word for _, _, word in prefix]
+    full_expected = [canonical_counts[q] for q in all_qs]
+    encoded = encode(all_qs)
+    repeated_key = next(word for _, _, word in prefix if frequency[word] > 1)
+    repeated_ordinals = [i for i, (_, _, q) in enumerate(prefix) if q == repeated_key]
+    repeated_native = {}
     native = {}
+    full_native = {}
     for method in ("rank2a", "persisted8", "suffix_array"):
         pointer = load(method, ROOT / case["index"], ROOT / case["table"],
                        ROOT / case["suffix_array"], libs)
         try:
             counts, _ = evaluate(method, pointer, encoded, libs)
-            native[method] = counts.tolist()
+            values = counts.tolist()
+            native[method] = [values[i] for i in positions]
+            repeated_native[method] = [values[i] for i in repeated_ordinals]
         finally:
             close(method, pointer, libs)
+        mismatches = sum(a != b for a, b in zip(values, full_expected))
+        if mismatches or len(values) != len(full_expected):
+            raise ValueError(f"{method} disagrees with canonical-window tally")
+        full_native[method] = {
+            "queries": len(values), "mismatches": mismatches,
+            "ordered_lf_counts_sha256": hashlib.sha256(
+                "".join(f"{n}\n" for n in values).encode("ascii")).hexdigest()}
         if native[method] != expected:
-            raise ValueError(f"{method} disagrees with the direct oracle")
+            raise ValueError(f"{method} sample disagrees with the direct oracle")
     for item, count in zip(sample, native["persisted8"]):
         item["count"] = count
     certificate = {"dataset": str(reference.relative_to(ROOT)),
@@ -102,6 +117,17 @@ def main():
     cert_path = args.output / "certificate.json"
     cert_path.write_text(json.dumps(certificate, indent=2) + "\n")
     verified = check(cert_path)
+    repeated_count = oracle(records, repeated_key)
+    if repeated_count != canonical_counts[repeated_key]:
+        raise ValueError("Repeated-key oracle mismatch")
+    repeated_certificate = {
+        "dataset": certificate["dataset"], "dataset_sha256": digest(reference),
+        "queries": [{"sequence": repeated_key, "count": count,
+                     "ordinal": i} for i, count in
+                    zip(repeated_ordinals, repeated_native["persisted8"])]}
+    repeated_path = args.output / "repeated-certificate.json"
+    repeated_path.write_text(json.dumps(repeated_certificate, indent=2) + "\n")
+    repeated_verified = check(repeated_path)
     peak = resource.getrusage(resource.RUSAGE_SELF).ru_maxrss
     peak_bytes = peak if sys.platform == "darwin" else peak * 1024
     budget = protocol["resources"]["proposed_process_memory_budget_bytes"]
@@ -123,6 +149,13 @@ def main():
         "canonical_forward_window_counts": [canonical_counts[q] for q in qs],
         "direct_both_strand_counts": expected, "native_counts": native,
         "certificate_check": verified,
+        "full_prefix_native_check": full_native,
+        "full_prefix_expected_count_distribution": dict(sorted(Counter(full_expected).items())),
+        "repeated_key_control": {"sequence": repeated_key,
+                                 "prefix_ordinals": repeated_ordinals,
+                                 "full_reference_count": repeated_count,
+                                 "native_counts": repeated_native,
+                                 "certificate_check": repeated_verified},
         "native_artifact_sha256": {key: digest(ROOT / case[key])
                                    for key in ("index", "table", "suffix_array")},
         "resources": {"generation_and_oracle_seconds": generation_and_oracle_seconds,

@@ -1,0 +1,1 @@
+{"queries": 100000, "checked": 64, "native_methods": ["rank2a", "persisted8", "suffix_array"], "peak_rss_bytes": 119754752, "within_proposed_budget": true}
