@@ -4,6 +4,7 @@ Read DISCOVERY.md, PARTICIPATION.md, research/ASSESSMENT.md and results/trial.js
 Run `python tools/check.py --quick`, then `python tools/pick.py --seed 42`.
 Use the activated environment from tools/setup.sh (or the shared parent .venv).
 Choose one bounded task; expert-agent review is an explicitly welcome track.
+For work over five minutes, post a claim first (CONTRIBUTING.md, "Claiming work").
 
 Keep proposed changes and result receipts in a new research/<session>/ package.
 Never overwrite the frozen initial trial, change its oracle to pass a candidate,

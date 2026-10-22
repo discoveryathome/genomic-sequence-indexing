@@ -17,6 +17,10 @@ earlier prior-files/ snapshots) are unchanged; the distribution-preparation
 snapshot gained a copy of discover/priority-log.md, which it had bound at its then
 current content, following the precedent of the publication migration.
 
+Follow-up the same day: CONTRIBUTING.md gained a "Claiming work" section (a
+schema-valid claim example for the Handoffs thread) and AGENTS.md a pointer to it;
+its pre-launch copy is saved and rebound the same way.
+
 Third-party audit for the launch: no stored papers, PDFs or HTML snapshots. Stored
 genomes are INSDC/ENA records (free and unrestricted access and redistribution);
 derived panels and queries are pilot-generated; the SDSL compatibility patch is a
