@@ -1,0 +1,1 @@
+{"method": "rank2a_AA", "count": 1, "load_seconds": 0.0027949579525738955, "query_seconds": 0.00011012493632733822, "load_plus_query_seconds": 0.002926875022239983, "input_import_seconds": 0.17164862505160272, "total_instrumented_seconds": 0.1745755000738427, "peak_rss_bytes": 37978112, "mismatches": 0, "filesystem_cache": "unflushed; fresh process only"}

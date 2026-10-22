@@ -1,0 +1,1 @@
+{"method": "persisted8", "count": 100000, "load_seconds": 0.01886433397885412, "query_seconds": 10.23441987496335, "load_plus_query_seconds": 10.254249584046192, "input_import_seconds": 10.37224670802243, "total_instrumented_seconds": 20.626496292068623, "peak_rss_bytes": 76300288, "mismatches": 0, "filesystem_cache": "unflushed; fresh process only"}

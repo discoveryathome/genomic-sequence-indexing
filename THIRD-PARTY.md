@@ -37,3 +37,7 @@ optimized production compressed indexes.
 
 All round-two queries are generated count-query workloads, not experimental
 protocols, engineered sequences for biological use or biological-effect predictions.
+
+## Optional SDSL comparator
+
+SDSL 2.1.1, commit 0546faf0552142f06ff4b201b671a5769dd007ad, is GPLv3 with separately licensed bundled components. See https://github.com/simongog/sdsl-lite/blob/v2.1.1/COPYING and research/distribution-prep-20261022/sdsl-source.json. Its source, dependencies and linked binaries remain in ignored build directories and are excluded from this source release. The pilot-owned adapter does not relicense SDSL; redistribution of a linked comparator must preserve the applicable dependency terms. Build compatibility changes are recorded in sdsl-compatibility.patch.

@@ -1,0 +1,17 @@
+{
+  "repository": "https://github.com/simongog/sdsl-lite",
+  "commit": "0546faf0552142f06ff4b201b671a5769dd007ad",
+  "tag": "v2.1.1",
+  "license": "GPLv3 plus bundled component licenses",
+  "source_not_vendored": true,
+  "submodules": " 8245545b6dc9c4703e6496d1efd19e975ad2b038 external/googletest (8245545)\n 0f24acd8de208464769c782119dacf158647f7ed external/libdivsufsort (2.0.1-13-g0f24acd)\n",
+  "compatibility_changes": [
+    "Disable fast-math",
+    "Recognize AppleClang",
+    "Correct misspelled unused LOUDS template members",
+    "CMake policy compatibility and PIC flags"
+  ],
+  "rebuild": "uv pip install --python .venv/bin/python cmake==4.4.4; .venv/bin/python tools/build_sdsl.py",
+  "compiler": "Apple clang version 21.0.0 (clang-2100.3.34.2)\nTarget: arm64-apple-darwin25.6.0\nThread model: posix\nInstalledDir: /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin\n",
+  "adapter_sha256": "edd4047ce28c0d7f3416078fc423c1ba2bbb95d3653eb35294d868c6c9754082"
+}

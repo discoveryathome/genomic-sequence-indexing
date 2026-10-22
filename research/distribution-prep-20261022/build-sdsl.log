@@ -1,0 +1,398 @@
+CMake Warning (deprecated) at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+-- The CXX compiler identification is AppleClang 21.0.0.21000334
+-- The C compiler identification is AppleClang 21.0.0.21000334
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: /usr/bin/c++ - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: /usr/bin/cc - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Compiler is recent enough to support C++11.
+-- Performing Test HAVE_MSVC_EHSC
+-- Performing Test HAVE_MSVC_EHSC - Failed
+-- Performing Test HAVE_MSVC_OD
+-- Performing Test HAVE_MSVC_OD - Failed
+-- Performing Test HAVE_MSVC_OX
+-- Performing Test HAVE_MSVC_OX - Failed
+-- Performing Test HAVE_CXA_DEMANGLE
+-- Performing Test HAVE_CXA_DEMANGLE - Failed
+-- Could NOT find CxaDemangle (missing: HAVE_CXA_DEMANGLE) 
+-- Found Git: /usr/bin/git (found version "2.54.0 (Apple Git-157)")
+git found: /usr/bin/git
+Submodule 'external/libdivsufsort' (https://github.com/simongog/libdivsufsort.git) registered for path 'external/libdivsufsort'
+Cloning into '/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/sdsl-lite/external/libdivsufsort'...
+CMake Warning (deprecated) at external/libdivsufsort/CMakeLists.txt:2 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+-- Performing Test HAVE_UNKNOWN_WALL
+-- Performing Test HAVE_UNKNOWN_WALL - Success
+-- Performing Test HAVE_UNKNOWN_FOMIT_FRAME_POINTER
+-- Performing Test HAVE_UNKNOWN_FOMIT_FRAME_POINTER - Success
+-- Looking for inttypes.h
+-- Looking for inttypes.h - found
+-- Looking for memory.h
+-- Looking for memory.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stdlib.h
+-- Looking for stdlib.h - found
+-- Looking for string.h
+-- Looking for string.h - found
+-- Looking for strings.h
+-- Looking for strings.h - found
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Performing Test HAVE_INLINE
+-- Performing Test HAVE_INLINE - Success
+-- Performing Test HAVE___INLINE
+-- Performing Test HAVE___INLINE - Success
+-- Performing Test HAVE___INLINE__
+-- Performing Test HAVE___INLINE__ - Success
+-- Performing Test HAVE___DECLSPEC_DLLEXPORT_
+-- Performing Test HAVE___DECLSPEC_DLLEXPORT_ - Failed
+-- Performing Test HAVE___DECLSPEC_DLLIMPORT_
+-- Performing Test HAVE___DECLSPEC_DLLIMPORT_ - Failed
+-- Check size of uint8_t
+-- Check size of uint8_t - done
+-- Check size of int32_t
+-- Check size of int32_t - done
+-- Looking for PRId32
+-- Looking for PRId32 - found
+-- Check size of int64_t
+-- Check size of int64_t - done
+-- Looking for PRId64
+-- Looking for PRId64 - found
+Submodule 'external/googletest' (https://chromium.googlesource.com/external/googletest) registered for path 'external/googletest'
+Cloning into '/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/sdsl-lite/external/googletest'...
+CMake Warning (deprecated) at external/googletest/CMakeLists.txt:43 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+CMake Warning (policy) at external/googletest/cmake/internal_utils.cmake:205 (find_package):
+  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning.
+Call Stack (most recent call first):
+  external/googletest/CMakeLists.txt:50 (include)
+This warning is for project developers.  Use -Wno-author or -Wno-policy to
+suppress it.
+
+-- Found PythonInterp: /opt/homebrew/bin/python3.14 (found version "3.14.6")
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+-- Found Threads: TRUE
+-- Looking for C++ include cstdio
+-- Looking for C++ include cstdio - found
+-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+-- Configuring done (9.1s)
+-- Generating done (0.5s)
+-- Build files have been written to: /Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/sdsl-build
+[  0%] Building CXX object lib/CMakeFiles/sdsl.dir/bp_support_algorithm.cpp.o
+[ 12%] Building CXX object lib/CMakeFiles/sdsl.dir/bits.cpp.o
+[ 12%] Building CXX object lib/CMakeFiles/sdsl.dir/coder_elias_delta.cpp.o
+In file included from /Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/sdsl-lite/lib/bp_support_algorithm.cpp:1:
+In file included from /Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/sdsl-build/lib/../include/sdsl/bp_support_algorithm.hpp:24:
+In file included from /Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/sdsl-build/lib/../include/sdsl/int_vector.hpp:26:
+/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/sdsl-build/lib/../include/sdsl/util.hpp:58:10: fatal error: 'process.h' file not found
+   58 | #include <process.h>
+      |          ^~~~~~~~~~~
+1 error generated.
+make[3]: *** [lib/CMakeFiles/sdsl.dir/bp_support_algorithm.cpp.o] Error 1
+make[3]: *** Waiting for unfinished jobs....
+In file included from /Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/sdsl-lite/lib/coder_elias_delta.cpp:1:
+In file included from /Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/sdsl-build/lib/../include/sdsl/coder_elias_delta.hpp:24:
+In file included from /Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/sdsl-build/lib/../include/sdsl/int_vector.hpp:26:
+/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/sdsl-build/lib/../include/sdsl/util.hpp:58:10: fatal error: 'process.h' file not found
+   58 | #include <process.h>
+      |          ^~~~~~~~~~~
+1 error generated.
+make[3]: *** [lib/CMakeFiles/sdsl.dir/coder_elias_delta.cpp.o] Error 1
+make[2]: *** [lib/CMakeFiles/sdsl.dir/all] Error 2
+make[1]: *** [lib/CMakeFiles/sdsl.dir/rule] Error 2
+make: *** [sdsl] Error 2
+CMake Warning (deprecated) at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+-- Compiler is recent enough to support C++11.
+-- Performing Test HAVE_CLANG_STD=C__11__DNDEBUG
+-- Performing Test HAVE_CLANG_STD=C__11__DNDEBUG - Success
+-- Performing Test HAVE_CLANG_STDLIB=LIBC__
+-- Performing Test HAVE_CLANG_STDLIB=LIBC__ - Success
+-- Performing Test HAVE_CLANG_O3__FNO_FAST_MATH__FUNROLL_LOOPS__D__EXTERN_ALWAYS_INLINE="EXTERN___ALWAYS_INLINE"_
+-- Performing Test HAVE_CLANG_O3__FNO_FAST_MATH__FUNROLL_LOOPS__D__EXTERN_ALWAYS_INLINE="EXTERN___ALWAYS_INLINE"_ - Success
+-- Could NOT find CxaDemangle (missing: HAVE_CXA_DEMANGLE) 
+git found: /usr/bin/git
+CMake Warning (deprecated) at external/libdivsufsort/CMakeLists.txt:2 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+CMake Warning (deprecated) at external/googletest/CMakeLists.txt:43 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+CMake Warning (policy) at external/googletest/cmake/internal_utils.cmake:205 (find_package):
+  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning.
+Call Stack (most recent call first):
+  external/googletest/CMakeLists.txt:50 (include)
+This warning is for project developers.  Use -Wno-author or -Wno-policy to
+suppress it.
+
+-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+-- Configuring done (3.7s)
+-- Generating done (2.5s)
+-- Build files have been written to: /Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/sdsl-build
+[ 12%] Building CXX object lib/CMakeFiles/sdsl.dir/bits.cpp.o
+[ 12%] Building CXX object lib/CMakeFiles/sdsl.dir/bp_support_algorithm.cpp.o
+[ 12%] Building CXX object lib/CMakeFiles/sdsl.dir/coder_elias_delta.cpp.o
+[ 12%] Building CXX object lib/CMakeFiles/sdsl.dir/coder_elias_gamma.cpp.o
+[ 25%] Building CXX object lib/CMakeFiles/sdsl.dir/coder_fibonacci.cpp.o
+[ 25%] Building CXX object lib/CMakeFiles/sdsl.dir/config.cpp.o
+[ 25%] Building CXX object lib/CMakeFiles/sdsl.dir/construct_config.cpp.o
+[ 25%] Building CXX object lib/CMakeFiles/sdsl.dir/construct_isa.cpp.o
+[ 37%] Building CXX object lib/CMakeFiles/sdsl.dir/construct_lcp.cpp.o
+In file included from /Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/sdsl-lite/lib/construct_lcp.cpp:6:
+/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/sdsl-build/lib/../include/sdsl/construct_lcp.hpp:130:53: warning: instantiation of variable 'sdsl::key_text_trait<'\b'>::KEY_TEXT' required here, but no definition is available [-Wundefined-var-template]
+  130 |     const char* KEY_TEXT = key_text_trait<t_width>::KEY_TEXT;
+      |                                                     ^
+/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/sdsl-lite/lib/construct_lcp.cpp:209:25: note: in instantiation of function template specialization 'sdsl::construct_lcp_PHI<(unsigned char)'\b'>' requested here
+  209 |                         construct_lcp_PHI<8>(config);
+      |                         ^
+/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/sdsl-build/lib/../include/sdsl/config.hpp:51:24: note: forward declaration of template entity is here
+   51 |     static const char* KEY_TEXT;
+      |                        ^
+/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/sdsl-build/lib/../include/sdsl/construct_lcp.hpp:130:53: note: add an explicit instantiation declaration to suppress this warning if 'sdsl::key_text_trait<'\b'>::KEY_TEXT' is explicitly instantiated in another translation unit
+  130 |     const char* KEY_TEXT = key_text_trait<t_width>::KEY_TEXT;
+      |                                                     ^
+In file included from /Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/sdsl-lite/lib/construct_lcp.cpp:6:
+In file included from /Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/sdsl-build/lib/../include/sdsl/construct_lcp.hpp:26:
+In file included from /Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/sdsl-build/lib/../include/sdsl/int_vector.hpp:27:
+/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/sdsl-build/lib/../include/sdsl/io.hpp:638:11: warning: reference cannot be bound to dereferenced null pointer in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
+  638 |     if ((&t) == nullptr)
+      |           ^     ~~~~~~~
+/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/sdsl-lite/lib/construct_lcp.cpp:651:26: note: in instantiation of function template specialization 'sdsl::size_in_bytes<sdsl::wt_pc<sdsl::huff_shape, sdsl::int_vector<'\x01'>, sdsl::rank_support_v<'\x01', '\x01'>, sdsl::select_support_scan<>, sdsl::select_support_scan<'\x00'>>>' requested here
+  651 |     size_type bb = (n*20-size_in_bytes(wt_bwt)*8*1.25-5*n)/n;   // 20n - size of wavelet tree * 1.25 for rank support - 5n for bit arrays - n for index_done array
+      |                          ^
+[ 37%] Building CXX object lib/CMakeFiles/sdsl.dir/construct_lcp_helper.cpp.o
+[ 37%] Building CXX object lib/CMakeFiles/sdsl.dir/construct_sa.cpp.o
+2 warnings generated.
+[ 37%] Building CXX object lib/CMakeFiles/sdsl.dir/construct_sa_se.cpp.o
+[ 50%] Building CXX object lib/CMakeFiles/sdsl.dir/csa_alphabet_strategy.cpp.o
+[ 50%] Building CXX object lib/CMakeFiles/sdsl.dir/io.cpp.o
+[ 50%] Building CXX object lib/CMakeFiles/sdsl.dir/lcp_support_tree.cpp.o
+[ 50%] Building CXX object lib/CMakeFiles/sdsl.dir/louds_tree.cpp.o
+[ 62%] Building CXX object lib/CMakeFiles/sdsl.dir/memory_management.cpp.o
+In file included from /Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/sdsl-lite/lib/louds_tree.cpp:1:
+/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/sdsl-build/lib/../include/sdsl/louds_tree.hpp:182:51: error: no member named 'm_select1' in 'louds_tree<bit_vec_t, select_1_t, select_0_t>'
+  182 |             util::swap_support(m_bv_select1, tree.m_select1, &m_bv, &(tree.m_bv));
+      |                                              ~~~~ ^
+/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/sdsl-build/lib/../include/sdsl/louds_tree.hpp:183:51: error: no member named 'm_select0' in 'louds_tree<bit_vec_t, select_1_t, select_0_t>'
+  183 |             util::swap_support(m_bv_select0, tree.m_select0, &m_bv, &(tree.m_bv));
+      |                                              ~~~~ ^
+2 errors generated.
+make[3]: *** [lib/CMakeFiles/sdsl.dir/louds_tree.cpp.o] Error 1
+make[3]: *** Waiting for unfinished jobs....
+make[2]: *** [lib/CMakeFiles/sdsl.dir/all] Error 2
+make[1]: *** [lib/CMakeFiles/sdsl.dir/rule] Error 2
+make: *** [sdsl] Error 2
+CMake Warning (deprecated) at CMakeLists.txt:1 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+-- Compiler is recent enough to support C++11.
+-- Performing Test HAVE_CLANG_STD=C__11__DNDEBUG
+-- Performing Test HAVE_CLANG_STD=C__11__DNDEBUG - Success
+-- Performing Test HAVE_CLANG_STDLIB=LIBC__
+-- Performing Test HAVE_CLANG_STDLIB=LIBC__ - Success
+-- Performing Test HAVE_CLANG_O3__FNO_FAST_MATH__FUNROLL_LOOPS__D__EXTERN_ALWAYS_INLINE="EXTERN___ALWAYS_INLINE"_
+-- Performing Test HAVE_CLANG_O3__FNO_FAST_MATH__FUNROLL_LOOPS__D__EXTERN_ALWAYS_INLINE="EXTERN___ALWAYS_INLINE"_ - Success
+-- Could NOT find CxaDemangle (missing: HAVE_CXA_DEMANGLE) 
+git found: /usr/bin/git
+CMake Warning (deprecated) at external/libdivsufsort/CMakeLists.txt:2 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+CMake Warning (deprecated) at external/googletest/CMakeLists.txt:43 (cmake_minimum_required):
+  Compatibility with CMake < 3.10 will be removed from a future version of
+  CMake.
+
+  Update the VERSION argument <min> value.  Or, use the <min>...<max> syntax
+  to tell CMake that the project requires at least <min> but has been updated
+  to work with policies introduced by <max> or earlier.
+This warning is for project developers.  Use -Wno-author or -Wno-deprecated
+to suppress it.
+
+CMake Warning (policy) at external/googletest/cmake/internal_utils.cmake:205 (find_package):
+  Policy CMP0148 is not set: The FindPythonInterp and FindPythonLibs modules
+  are removed.  Run "cmake --help-policy CMP0148" for policy details.  Use
+  the cmake_policy command to set the policy and suppress this warning.
+Call Stack (most recent call first):
+  external/googletest/CMakeLists.txt:50 (include)
+This warning is for project developers.  Use -Wno-author or -Wno-policy to
+suppress it.
+
+-- Could NOT find Doxygen (missing: DOXYGEN_EXECUTABLE) 
+-- Configuring done (1.2s)
+-- Generating done (0.5s)
+-- Build files have been written to: /Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/sdsl-build
+[ 12%] Building CXX object lib/CMakeFiles/sdsl.dir/bp_support_algorithm.cpp.o
+[ 12%] Building CXX object lib/CMakeFiles/sdsl.dir/bits.cpp.o
+[ 12%] Building CXX object lib/CMakeFiles/sdsl.dir/coder_elias_delta.cpp.o
+[ 12%] Building CXX object lib/CMakeFiles/sdsl.dir/coder_elias_gamma.cpp.o
+[ 25%] Building CXX object lib/CMakeFiles/sdsl.dir/coder_fibonacci.cpp.o
+[ 25%] Building CXX object lib/CMakeFiles/sdsl.dir/config.cpp.o
+[ 25%] Building CXX object lib/CMakeFiles/sdsl.dir/construct_config.cpp.o
+[ 25%] Building CXX object lib/CMakeFiles/sdsl.dir/construct_isa.cpp.o
+[ 37%] Building CXX object lib/CMakeFiles/sdsl.dir/construct_lcp.cpp.o
+In file included from /Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/sdsl-lite/lib/construct_lcp.cpp:6:
+/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/sdsl-build/lib/../include/sdsl/construct_lcp.hpp:130:53: warning: instantiation of variable 'sdsl::key_text_trait<'\b'>::KEY_TEXT' required here, but no definition is available [-Wundefined-var-template]
+  130 |     const char* KEY_TEXT = key_text_trait<t_width>::KEY_TEXT;
+      |                                                     ^
+/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/sdsl-lite/lib/construct_lcp.cpp:209:25: note: in instantiation of function template specialization 'sdsl::construct_lcp_PHI<(unsigned char)'\b'>' requested here
+  209 |                         construct_lcp_PHI<8>(config);
+      |                         ^
+/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/sdsl-build/lib/../include/sdsl/config.hpp:51:24: note: forward declaration of template entity is here
+   51 |     static const char* KEY_TEXT;
+      |                        ^
+/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/sdsl-build/lib/../include/sdsl/construct_lcp.hpp:130:53: note: add an explicit instantiation declaration to suppress this warning if 'sdsl::key_text_trait<'\b'>::KEY_TEXT' is explicitly instantiated in another translation unit
+  130 |     const char* KEY_TEXT = key_text_trait<t_width>::KEY_TEXT;
+      |                                                     ^
+In file included from /Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/sdsl-lite/lib/construct_lcp.cpp:6:
+In file included from /Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/sdsl-build/lib/../include/sdsl/construct_lcp.hpp:26:
+In file included from /Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/sdsl-build/lib/../include/sdsl/int_vector.hpp:27:
+/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/sdsl-build/lib/../include/sdsl/io.hpp:638:11: warning: reference cannot be bound to dereferenced null pointer in well-defined C++ code; comparison may be assumed to always evaluate to false [-Wtautological-undefined-compare]
+  638 |     if ((&t) == nullptr)
+      |           ^     ~~~~~~~
+/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/sdsl-lite/lib/construct_lcp.cpp:651:26: note: in instantiation of function template specialization 'sdsl::size_in_bytes<sdsl::wt_pc<sdsl::huff_shape, sdsl::int_vector<'\x01'>, sdsl::rank_support_v<'\x01', '\x01'>, sdsl::select_support_scan<>, sdsl::select_support_scan<'\x00'>>>' requested here
+  651 |     size_type bb = (n*20-size_in_bytes(wt_bwt)*8*1.25-5*n)/n;   // 20n - size of wavelet tree * 1.25 for rank support - 5n for bit arrays - n for index_done array
+      |                          ^
+[ 37%] Building CXX object lib/CMakeFiles/sdsl.dir/construct_lcp_helper.cpp.o
+[ 37%] Building CXX object lib/CMakeFiles/sdsl.dir/construct_sa.cpp.o
+2 warnings generated.
+[ 37%] Building CXX object lib/CMakeFiles/sdsl.dir/construct_sa_se.cpp.o
+[ 50%] Building CXX object lib/CMakeFiles/sdsl.dir/csa_alphabet_strategy.cpp.o
+[ 50%] Building CXX object lib/CMakeFiles/sdsl.dir/io.cpp.o
+[ 50%] Building CXX object lib/CMakeFiles/sdsl.dir/lcp_support_tree.cpp.o
+[ 50%] Building CXX object lib/CMakeFiles/sdsl.dir/louds_tree.cpp.o
+[ 62%] Building CXX object lib/CMakeFiles/sdsl.dir/memory_management.cpp.o
+[ 62%] Building CXX object lib/CMakeFiles/sdsl.dir/nn_dict_dynamic.cpp.o
+[ 62%] Building CXX object lib/CMakeFiles/sdsl.dir/ram_filebuf.cpp.o
+[ 62%] Building CXX object lib/CMakeFiles/sdsl.dir/ram_fs.cpp.o
+[ 75%] Building CXX object lib/CMakeFiles/sdsl.dir/rrr_vector_15.cpp.o
+[ 75%] Building CXX object lib/CMakeFiles/sdsl.dir/sd_vector.cpp.o
+[ 75%] Building CXX object lib/CMakeFiles/sdsl.dir/sfstream.cpp.o
+[ 75%] Building CXX object lib/CMakeFiles/sdsl.dir/structure_tree.cpp.o
+[ 87%] Building CXX object lib/CMakeFiles/sdsl.dir/uint128_t.cpp.o
+[ 87%] Building CXX object lib/CMakeFiles/sdsl.dir/uint256_t.cpp.o
+[ 87%] Building CXX object lib/CMakeFiles/sdsl.dir/util.cpp.o
+[ 87%] Building CXX object lib/CMakeFiles/sdsl.dir/wt_helper.cpp.o
+[100%] Linking CXX static library libsdsl.a
+[100%] Built target sdsl
+[  0%] Building C object external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/divsufsort.c.o
+[  0%] Building C object external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/sssort.c.o
+[  0%] Building C object external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/trsort.c.o
+[100%] Building C object external/libdivsufsort/lib/CMakeFiles/divsufsort.dir/utils.c.o
+[100%] Linking C static library libdivsufsort.a
+[100%] Built target divsufsort
+[  0%] Building C object external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/divsufsort.c.o
+[  0%] Building C object external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/sssort.c.o
+[100%] Building C object external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/trsort.c.o
+[100%] Building C object external/libdivsufsort/lib/CMakeFiles/divsufsort64.dir/utils.c.o
+[100%] Linking C static library libdivsufsort64.a
+[100%] Built target divsufsort64
+In file included from /Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/research/distribution-prep-20261022/sdsl_adapter.cpp:2:
+In file included from /Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/sdsl-build/include/sdsl/suffix_arrays.hpp:28:
+In file included from /Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/sdsl-build/include/sdsl/csa_bitcompressed.hpp:29:
+In file included from /Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/sdsl-build/include/sdsl/csa_sampling_strategy.hpp:57:
+In file included from /Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/sdsl-build/include/sdsl/wavelet_trees.hpp:41:
+/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/sdsl-build/include/sdsl/construct.hpp:124:79: warning: instantiation of variable 'sdsl::key_text_trait<'\b'>::KEY_TEXT' required here, but no definition is available [-Wundefined-var-template]
+  124 |     const char* KEY_TEXT = key_text_trait<t_index::alphabet_category::WIDTH>::KEY_TEXT;
+      |                                                                               ^
+/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/sdsl-build/include/sdsl/construct.hpp:90:5: note: in instantiation of function template specialization 'sdsl::construct<sdsl::csa_wt<sdsl::wt_pc<sdsl::huff_shape, sdsl::rrr_vector<>, sdsl::rank_support_rrr<'\x01', 63>, sdsl::select_support_rrr<'\x01', 63>, sdsl::select_support_rrr<'\x00', 63>>>>' requested here
+   90 |     construct(idx, file, config, num_bytes, index_tag);
+      |     ^
+/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/sdsl-build/include/sdsl/construct.hpp:63:5: note: in instantiation of function template specialization 'sdsl::construct<sdsl::csa_wt<sdsl::wt_pc<sdsl::huff_shape, sdsl::rrr_vector<>, sdsl::rank_support_rrr<'\x01', 63>, sdsl::select_support_rrr<'\x01', 63>, sdsl::select_support_rrr<'\x00', 63>>>>' requested here
+   63 |     construct(idx, file, config, num_bytes);
+      |     ^
+/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/sdsl-build/include/sdsl/construct.hpp:71:5: note: in instantiation of function template specialization 'sdsl::construct<sdsl::csa_wt<sdsl::wt_pc<sdsl::huff_shape, sdsl::rrr_vector<>, sdsl::rank_support_rrr<'\x01', 63>, sdsl::select_support_rrr<'\x01', 63>, sdsl::select_support_rrr<'\x00', 63>>>>' requested here
+   71 |     construct(idx, tmp_file, num_bytes);
+      |     ^
+/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/research/distribution-prep-20261022/sdsl_adapter.cpp:9:29: note: in instantiation of function template specialization 'sdsl::construct_im<sdsl::csa_wt<sdsl::wt_pc<sdsl::huff_shape, sdsl::rrr_vector<>, sdsl::rank_support_rrr<'\x01', 63>, sdsl::select_support_rrr<'\x01', 63>, sdsl::select_support_rrr<'\x00', 63>>>, std::string>' requested here
+    9 |     try {Index index; sdsl::construct_im(index,std::string((const char*)data,n),1);
+      |                             ^
+/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/sdsl-build/include/sdsl/config.hpp:51:24: note: forward declaration of template entity is here
+   51 |     static const char* KEY_TEXT;
+      |                        ^
+/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/sdsl-build/include/sdsl/construct.hpp:124:79: note: add an explicit instantiation declaration to suppress this warning if 'sdsl::key_text_trait<'\b'>::KEY_TEXT' is explicitly instantiated in another translation unit
+  124 |     const char* KEY_TEXT = key_text_trait<t_index::alphabet_category::WIDTH>::KEY_TEXT;
+      |                                                                               ^
+/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/sdsl-build/include/sdsl/construct.hpp:125:78: warning: instantiation of variable 'sdsl::key_bwt_trait<'\b'>::KEY_BWT' required here, but no definition is available [-Wundefined-var-template]
+  125 |     const char* KEY_BWT  = key_bwt_trait<t_index::alphabet_category::WIDTH>::KEY_BWT;
+      |                                                                              ^
+/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/sdsl-build/include/sdsl/config.hpp:57:24: note: forward declaration of template entity is here
+   57 |     static const char* KEY_BWT;
+      |                        ^
+/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/sdsl-build/include/sdsl/construct.hpp:125:78: note: add an explicit instantiation declaration to suppress this warning if 'sdsl::key_bwt_trait<'\b'>::KEY_BWT' is explicitly instantiated in another translation unit
+  125 |     const char* KEY_BWT  = key_bwt_trait<t_index::alphabet_category::WIDTH>::KEY_BWT;
+      |                                                                              ^
+2 warnings generated.

@@ -17,3 +17,10 @@ if 'commit' in json.loads((root/'research/sources.json').read_text())['sources']
  subprocess.run(['git','diff','--exit-code','HEAD'],cwd=root/'vendor/ropebwt3',check=True,capture_output=True)
 if not args.quick:subprocess.run([sys.executable,'-m','pytest','-q','tests'],cwd=root,check=True)
 print('PASS: schemas and frozen artifacts; intake open; scientific review pending')
+
+# Preserve prior package identities across explicit onboarding/frontier migrations.
+import sys
+root=Path(__file__).resolve().parents[1]
+prior=root/'research/distribution-prep-20261022'
+for path,h in json.loads((prior/'prior-manifest.json').read_text())['sha256'].items():
+ assert any(f.is_file() and hashlib.sha256(f.read_bytes()).hexdigest()==h for f in [root/path,prior/'prior-files'/path]),('historical',path)

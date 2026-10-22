@@ -45,3 +45,7 @@ Pilot-owned code is MIT. Upstream libraries and public sequence metadata retain
 their own notices in THIRD-PARTY.md. No remote or hub enrollment is configured.
 Source archives/Git bundles are available through tools/make_release.py.
 Intake is open; independent scientific review remains pending.
+
+## Distribution preparation
+
+Choose a concrete package in [FIRST_TASKS.md](FIRST_TASKS.md); `python tools/pick.py --task replication` selects the first-session task. Read [EVALUATION.md](EVALUATION.md) and [FIRST_REVIEW.md](FIRST_REVIEW.md). Current baseline and platform status is in research/distribution-prep-20261022/STATUS.md.

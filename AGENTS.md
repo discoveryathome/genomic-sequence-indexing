@@ -20,3 +20,7 @@ user's actual permission before external posting; local research is open.
 Round two is the current handoff: read DISTRIBUTION.md and research/round2/ASSESSMENT.md.
 Use the current archive/baselines and the bounded contribution command. Intake remains open.
 Scope is computational exact-string indexing only; no wet-lab or biological-effect work.
+
+## Distribution preparation
+
+Choose a concrete package in [FIRST_TASKS.md](FIRST_TASKS.md); `python tools/pick.py --task replication` selects the first-session task. Read [EVALUATION.md](EVALUATION.md) and [FIRST_REVIEW.md](FIRST_REVIEW.md). Current baseline and platform status is in research/distribution-prep-20261022/STATUS.md.

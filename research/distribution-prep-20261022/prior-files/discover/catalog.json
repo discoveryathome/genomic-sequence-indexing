@@ -1,0 +1,144 @@
+{
+  "schema": "discover-catalog/v0",
+  "priority_revision": 2,
+  "assessed_on": "2026-10-22",
+  "status": "Open for local pre-release trials and expert-agent review",
+  "tracks": [
+    {
+      "id": "optimization",
+      "weight": 35,
+      "tasks": [
+        {
+          "id": "optimization",
+          "question": "Can a new cache/layout improve the total time\u2013memory tradeoff beyond persisted8 and rank2a?",
+          "starting_points": [
+            "research/round2/ASSESSMENT.md",
+            "DISTRIBUTION.md",
+            "research/round2/PROTOCOL.md"
+          ],
+          "methods": [
+            "bounded experiment",
+            "reproduction",
+            "scoped review"
+          ],
+          "acceptance_gate": "Correctness verified; compare to the strongest in-scope baseline; preserve negative results and give reproducible artifacts. Scientific acceptance remains pending review.",
+          "first_step": {
+            "command": [
+              "python",
+              "tools/check.py",
+              "--quick"
+            ],
+            "expected": "Source/data/schema integrity passes; intake open."
+          },
+          "bottleneck_link": "research/ASSESSMENT.md",
+          "first_experiment": "Compare startup, query batch size, index/cache bytes and peak memory; retain rank2a and the full suffix-array architectural control.",
+          "scope_change_triggers": [
+            "Stop at 30 minutes of contribution work and hand off; propose larger experiments before expanding scope."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "verification",
+      "weight": 25,
+      "tasks": [
+        {
+          "id": "verification",
+          "question": "Can a count, source-binding, cache-integrity or alphabet counterexample be minimized?",
+          "starting_points": [
+            "research/round2/ASSESSMENT.md",
+            "DISTRIBUTION.md",
+            "research/round2/PROTOCOL.md"
+          ],
+          "methods": [
+            "bounded experiment",
+            "reproduction",
+            "scoped review"
+          ],
+          "acceptance_gate": "Correctness verified; compare to the strongest in-scope baseline; preserve negative results and give reproducible artifacts. Scientific acceptance remains pending review.",
+          "first_step": {
+            "command": [
+              "python",
+              "tools/check.py",
+              "--quick"
+            ],
+            "expected": "Source/data/schema integrity passes; intake open."
+          },
+          "bottleneck_link": "research/ASSESSMENT.md",
+          "first_experiment": "Audit literal N, overlapping hits, two strands, contig boundaries and corrupt/wrong-index cache rejection.",
+          "scope_change_triggers": [
+            "Stop at 30 minutes of contribution work and hand off; propose larger experiments before expanding scope."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "workloads",
+      "weight": 25,
+      "tasks": [
+        {
+          "id": "workloads",
+          "question": "Does the result help a realistic computational exact-count workload?",
+          "starting_points": [
+            "research/round2/ASSESSMENT.md",
+            "DISTRIBUTION.md",
+            "research/round2/PROTOCOL.md"
+          ],
+          "methods": [
+            "bounded experiment",
+            "reproduction",
+            "scoped review"
+          ],
+          "acceptance_gate": "Correctness verified; compare to the strongest in-scope baseline; preserve negative results and give reproducible artifacts. Scientific acceptance remains pending review.",
+          "first_step": {
+            "command": [
+              "python",
+              "tools/check.py",
+              "--quick"
+            ],
+            "expected": "Source/data/schema integrity passes; intake open."
+          },
+          "bottleneck_link": "research/ASSESSMENT.md",
+          "first_experiment": "Provide sourced count-query traces, expected batch sizes and memory limits; no biological-effect or wet-lab work is in scope.",
+          "scope_change_triggers": [
+            "Stop at 30 minutes of contribution work and hand off; propose larger experiments before expanding scope."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "expert-review",
+      "weight": 15,
+      "tasks": [
+        {
+          "id": "expert-review",
+          "question": "Are the baselines, resource tradeoffs and proposed software utility credible?",
+          "starting_points": [
+            "research/round2/ASSESSMENT.md",
+            "DISTRIBUTION.md",
+            "research/round2/PROTOCOL.md"
+          ],
+          "methods": [
+            "bounded experiment",
+            "reproduction",
+            "scoped review"
+          ],
+          "acceptance_gate": "Correctness verified; compare to the strongest in-scope baseline; preserve negative results and give reproducible artifacts. Scientific acceptance remains pending review.",
+          "first_step": {
+            "command": [
+              "python",
+              "tools/check.py",
+              "--quick"
+            ],
+            "expected": "Source/data/schema integrity passes; intake open."
+          },
+          "bottleneck_link": "research/ASSESSMENT.md",
+          "first_experiment": "Review both measurement passes, timing noise, SA-control limitations and current compressed-index alternatives; identify a useful upstream workload.",
+          "scope_change_triggers": [
+            "Stop at 30 minutes of contribution work and hand off; propose larger experiments before expanding scope."
+          ]
+        }
+      ]
+    }
+  ]
+}

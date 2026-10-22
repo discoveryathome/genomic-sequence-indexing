@@ -1,0 +1,46 @@
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index a78d082..0a4420e 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -30,7 +30,7 @@ option(GENERATE_DOC "Set ON to genrate doxygen API reference in build/doc direct
+ if(NOT CMAKE_CXX_COMPILER_VERSION) # work around for cmake versions smaller than 2.8.10
+     execute_process(COMMAND ${CMAKE_CXX_COMPILER} -dumpversion OUTPUT_VARIABLE CMAKE_CXX_COMPILER_VERSION)
+ endif()
+-if(CMAKE_CXX_COMPILER MATCHES ".*clang.*" OR CMAKE_CXX_COMPILER_ID STREQUAL "Clang")
++if(CMAKE_CXX_COMPILER MATCHES ".*clang.*" OR CMAKE_CXX_COMPILER_ID STREQUAL "Clang" OR CMAKE_CXX_COMPILER_ID STREQUAL "AppleClang")
+       set(CMAKE_COMPILER_IS_CLANGXX 1)
+ endif()
+ if( (CMAKE_COMPILER_IS_GNUCXX AND ${CMAKE_CXX_COMPILER_VERSION} VERSION_LESS 4.7) OR
+@@ -42,7 +42,7 @@ endif()
+ 
+ if( CMAKE_COMPILER_IS_GNUCXX )
+     append_cxx_compiler_flags("-std=c++11 -Wall -Wextra -DNDEBUG" "GCC" CMAKE_CXX_FLAGS)
+-    append_cxx_compiler_flags("-O3 -ffast-math -funroll-loops" "GCC" CMAKE_CXX_OPT_FLAGS)
++    append_cxx_compiler_flags("-O3 -fno-fast-math -funroll-loops" "GCC" CMAKE_CXX_OPT_FLAGS)
+     if ( CODE_COVERAGE )
+         append_cxx_compiler_flags("-g -fprofile-arcs -ftest-coverage -lgcov" "GCC" CMAKE_CXX_FLAGS)
+     endif()
+@@ -51,7 +51,7 @@ else()
+     if( CMAKE_COMPILER_IS_CLANGXX )
+ 		append_cxx_compiler_flags("-std=c++11 -DNDEBUG" "CLANG" CMAKE_CXX_FLAGS)
+ 		append_cxx_compiler_flags("-stdlib=libc++" "CLANG" CMAKE_CXX_FLAGS)
+-		append_cxx_compiler_flags("-O3 -ffast-math -funroll-loops -D__extern_always_inline=\"extern __always_inline\" " "CLANG" CMAKE_CXX_OPT_FLAGS)
++		append_cxx_compiler_flags("-O3 -fno-fast-math -funroll-loops -D__extern_always_inline=\"extern __always_inline\" " "CLANG" CMAKE_CXX_OPT_FLAGS)
+ 	else()
+ 		append_cxx_compiler_flags("/EHsc" "MSVC" CMAKE_CXX_FLAGS)
+ 		append_cxx_compiler_flags("/Od" "MSVC" CMAKE_CXX_FLAGS_DEBUG)
+diff --git a/include/sdsl/louds_tree.hpp b/include/sdsl/louds_tree.hpp
+index 6d6d6e9..2149e34 100644
+--- a/include/sdsl/louds_tree.hpp
++++ b/include/sdsl/louds_tree.hpp
+@@ -179,8 +179,8 @@ class louds_tree
+ 
+         void swap(louds_tree& tree) {
+             m_bv.swap(tree.m_bv);
+-            util::swap_support(m_bv_select1, tree.m_select1, &m_bv, &(tree.m_bv));
+-            util::swap_support(m_bv_select0, tree.m_select0, &m_bv, &(tree.m_bv));
++            util::swap_support(m_bv_select1, tree.m_bv_select1, &m_bv, &(tree.m_bv));
++            util::swap_support(m_bv_select0, tree.m_bv_select0, &m_bv, &(tree.m_bv));
+         }
+ 
+         size_type serialize(std::ostream& out, structure_tree_node* v=nullptr, std::string name="")const {
