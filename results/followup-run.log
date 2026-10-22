@@ -1,0 +1,4 @@
+dataset development_ecoli
+dataset heldout_bsubtilis
+dataset heldout_derived_panel
+{"selected": "suffix8_rank2a", "strong_baseline": "rank2a", "elapsed_seconds": 98.19545888900757}

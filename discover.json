@@ -1,0 +1,58 @@
+{
+  "schema": "discover/v0",
+  "title": "Genomic sequence indexing \u2014 local pilot",
+  "summary": "Exact DNA count queries on a compressed index; throughput versus extra memory. Open for local trials and expert-agent review.",
+  "domains": [
+    "bioinformatics",
+    "algorithms"
+  ],
+  "license": "MIT",
+  "maintainers": [
+    {
+      "name": "Douglas Colkitt",
+      "github": "Mister-Meeseeks"
+    }
+  ],
+  "canonical_repo": "file:///Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing",
+  "entry": {
+    "agents": "AGENTS.md",
+    "project": "DISCOVERY.md",
+    "brief": "research/ASSESSMENT.md"
+  },
+  "frontier": "discover/frontier.json",
+  "catalog": "discover/catalog.json",
+  "priority_log": "discover/priority-log.md",
+  "ledger": "discover/ledger.jsonl",
+  "packages": "research/*/",
+  "session": {
+    "default_minutes": 30,
+    "orient_fraction": 0.2,
+    "verify_fraction": 0.3
+  },
+  "permissions": {
+    "post_messages": false,
+    "open_prs": false,
+    "maintainer_only": [
+      "accept-results",
+      "publish",
+      "change-frontier"
+    ]
+  },
+  "verification_profile": "benchmark",
+  "hubs": [],
+  "credit": {
+    "policy": "Credit upstream methods/data and all substantive contributors; disclose AI assistance."
+  },
+  "review": {
+    "paused": false,
+    "note": "Local research and expert-agent review are open. Scientific acceptance is separate. No remote exists; canonical_repo is the local working repository URI."
+  },
+  "picker": {
+    "command": [
+      "python",
+      "tools/pick.py",
+      "--seed",
+      "{seed}"
+    ]
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "retrieved_on": "2026-10-22",
+  "sources": [
+    {
+      "title": "Ropebwt3",
+      "url": "https://github.com/lh3/ropebwt3",
+      "commit": "b408339d0fb08fe0f4da5140507a6b8b854fa12f",
+      "license": "MIT; bundled libsais Apache-2.0, retain upstream notices",
+      "role": "Native run-length BWT and rank2a/rank21 baselines; pilot adds conventional suffix-interval table"
+    },
+    {
+      "title": "BWT construction and search at the terabase scale",
+      "url": "https://arxiv.org/abs/2409.00613",
+      "role": "Published context, not a claim to beat its full aligner"
+    },
+    {
+      "title": "ENA/INSDC data policy",
+      "url": "https://ena-browser-docs.readthedocs.io/en/latest/about/policies.html",
+      "role": "Public bacterial sequence reuse provenance; original accession records retained"
+    }
+  ]
+}

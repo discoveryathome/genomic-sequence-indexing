@@ -1,0 +1,6 @@
+[M::main_build::0.029*0.85] read 8431214 symbols from file '/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/data/heldout_bsubtilis.fasta'
+[M::main_build::0.991*0.40] constructed partial BWT for 8431214 symbols
+[M::main_build::1.752*0.44] encoded the partial BWT for 8431214 symbols
+[M::main] Version: 3.10-r285-dirty
+[M::main] CMD: /Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/vendor/ropebwt3/ropebwt3 build -t1 -d -o /Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/heldout_bsubtilis.fmd /Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/data/heldout_bsubtilis.fasta
+[M::main] Real time: 1.861 sec; CPU: 0.856 sec; Peak RSS: 0.065 GB

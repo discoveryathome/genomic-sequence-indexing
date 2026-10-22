@@ -1,0 +1,4 @@
+numpy==2.5.4
+mpmath==1.4.1
+pytest==9.1.1
+jsonschema==4.26.0

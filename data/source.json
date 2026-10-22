@@ -1,0 +1,8 @@
+{
+  "accession": "U00096.3",
+  "organism": "Escherichia coli K-12 MG1655",
+  "url": "https://www.ebi.ac.uk/ena/browser/api/fasta/U00096.3?download=false",
+  "sha256": "c41a4207c8916ba6138460d129ce5604cb307d40b7d56207878a9e731a418074",
+  "bytes": 4719094,
+  "reuse_policy": "https://ena-browser-docs.readthedocs.io/en/latest/about/policies.html"
+}

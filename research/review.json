@@ -1,0 +1,9 @@
+{
+  "status": "pending",
+  "independent_review": false,
+  "scientific_owner": null,
+  "scope": "Verifier soundness, current competitive baselines, useful workloads and interpretation; local work is open.",
+  "reviewer": null,
+  "reviewed_commit": null,
+  "findings": []
+}

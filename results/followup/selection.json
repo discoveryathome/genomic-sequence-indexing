@@ -1,0 +1,5 @@
+{
+  "selected": "suffix8_rank2a",
+  "strong_baseline": "rank2a",
+  "rule": "fastest development median; <=1 MiB suffix table; every query exact"
+}

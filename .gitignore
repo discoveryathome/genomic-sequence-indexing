@@ -1,0 +1,7 @@
+.venv/
+build/
+__pycache__/
+.pytest_cache/
+*.pyc
+.DS_Store
+/vendor/ropebwt3/

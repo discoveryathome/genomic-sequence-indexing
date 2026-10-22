@@ -1,0 +1,39 @@
+{
+  "schema": "discover-frontier/v0",
+  "statement": "Native suffix-table follow-up matches all exact-count oracles and shows provisional median query gains with 1 MiB extra storage; no novelty or isolated performance claim.",
+  "status": "Local author-run trial complete; open for contributions and expert-agent review; scientific acceptance pending.",
+  "evidence_level": [
+    "author-checked"
+  ],
+  "scope": "Only the pinned source, explicit domains, sampled workloads and machine in this package; timing noise and baseline limitations are documented.",
+  "review": "research/review.json",
+  "updated_on": "2026-10-22",
+  "artifacts": [
+    {
+      "path": "results/trial.json",
+      "sha256": "669329e62b440a4c7d15174abd3f8db80da317a24c142ae401e0a10fb696f4a9"
+    },
+    {
+      "path": "src/trial.py",
+      "sha256": "119596dcba77c87a3a9bdf1f0de9c931267c2b09dc843023bf4063589681d152"
+    },
+    {
+      "path": "results/followup/trial.json",
+      "sha256": "ca72ec1098ea0de5f46f3d4c8d94514343afee16a2d3ffc722f81c1604a5049c"
+    }
+  ],
+  "reproduce": "python tools/check.py",
+  "reproduce_full": "python src/trial.py (in a copy; writes new results)",
+  "assumptions": [
+    {
+      "id": "review",
+      "statement": "No independent external review or novelty assessment has been completed.",
+      "status": "open"
+    },
+    {
+      "id": "performance",
+      "statement": "Performance needs isolated replication and representative workload validation.",
+      "status": "open"
+    }
+  ]
+}

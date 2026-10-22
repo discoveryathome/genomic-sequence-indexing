@@ -1,0 +1,140 @@
+{
+  "schema": "discover-catalog/v0",
+  "priority_revision": 1,
+  "assessed_on": "2026-10-22",
+  "status": "Open for local pre-release trials and expert-agent review",
+  "tracks": [
+    {
+      "id": "optimization",
+      "weight": 35,
+      "tasks": [
+        {
+          "id": "optimization",
+          "question": "Can a candidate improve the verified accuracy/cost or correctness/cost tradeoff beyond the inherited baseline?",
+          "starting_points": [
+            "results/trial.json",
+            "src/trial.py"
+          ],
+          "methods": [
+            "bounded experiment",
+            "reproduction",
+            "scoped review"
+          ],
+          "acceptance_gate": "Correctness verified; compare to the strongest in-scope baseline; preserve negative results and give reproducible artifacts. Scientific acceptance remains pending review.",
+          "first_step": {
+            "command": [
+              "python",
+              "tools/check.py",
+              "--quick"
+            ],
+            "expected": "Source/data/schema integrity passes; intake open."
+          },
+          "bottleneck_link": "research/ASSESSMENT.md",
+          "first_experiment": "Define a new candidate or parameter family before running it; preserve every attempted result.",
+          "scope_change_triggers": [
+            "Stop at 30 minutes of contribution work and hand off; propose larger experiments before expanding scope."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "verification",
+      "weight": 25,
+      "tasks": [
+        {
+          "id": "verification",
+          "question": "Can adversarial inputs or a separate checker expose a false acceptance or domain gap?",
+          "starting_points": [
+            "tests/",
+            "src/trial.py"
+          ],
+          "methods": [
+            "bounded experiment",
+            "reproduction",
+            "scoped review"
+          ],
+          "acceptance_gate": "Correctness verified; compare to the strongest in-scope baseline; preserve negative results and give reproducible artifacts. Scientific acceptance remains pending review.",
+          "first_step": {
+            "command": [
+              "python",
+              "tools/check.py",
+              "--quick"
+            ],
+            "expected": "Source/data/schema integrity passes; intake open."
+          },
+          "bottleneck_link": "research/ASSESSMENT.md",
+          "first_experiment": "Minimize one genuine boundary case or document a scoped audit against an independent oracle.",
+          "scope_change_triggers": [
+            "Stop at 30 minutes of contribution work and hand off; propose larger experiments before expanding scope."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "workloads",
+      "weight": 25,
+      "tasks": [
+        {
+          "id": "workloads",
+          "question": "Does the result transfer to a useful, independently motivated workload?",
+          "starting_points": [
+            "research/ASSESSMENT.md",
+            "research/sources.json"
+          ],
+          "methods": [
+            "bounded experiment",
+            "reproduction",
+            "scoped review"
+          ],
+          "acceptance_gate": "Correctness verified; compare to the strongest in-scope baseline; preserve negative results and give reproducible artifacts. Scientific acceptance remains pending review.",
+          "first_step": {
+            "command": [
+              "python",
+              "tools/check.py",
+              "--quick"
+            ],
+            "expected": "Source/data/schema integrity passes; intake open."
+          },
+          "bottleneck_link": "research/ASSESSMENT.md",
+          "first_experiment": "Add provenance and freeze a genuinely fresh workload before candidate tuning.",
+          "scope_change_triggers": [
+            "Stop at 30 minutes of contribution work and hand off; propose larger experiments before expanding scope."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "expert-review",
+      "weight": 15,
+      "tasks": [
+        {
+          "id": "expert-review",
+          "question": "Are the baseline, headroom and claimed practical contribution scientifically credible?",
+          "starting_points": [
+            "research/ASSESSMENT.md",
+            "research/review.json"
+          ],
+          "methods": [
+            "bounded experiment",
+            "reproduction",
+            "scoped review"
+          ],
+          "acceptance_gate": "Correctness verified; compare to the strongest in-scope baseline; preserve negative results and give reproducible artifacts. Scientific acceptance remains pending review.",
+          "first_step": {
+            "command": [
+              "python",
+              "tools/check.py",
+              "--quick"
+            ],
+            "expected": "Source/data/schema integrity passes; intake open."
+          },
+          "bottleneck_link": "research/ASSESSMENT.md",
+          "first_experiment": "Review the exact commit; distinguish agent review from human expert signoff and author work from independent review.",
+          "scope_change_triggers": [
+            "Stop at 30 minutes of contribution work and hand off; propose larger experiments before expanding scope."
+          ]
+        }
+      ]
+    }
+  ]
+}
