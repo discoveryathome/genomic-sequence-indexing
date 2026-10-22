@@ -1,7 +1,7 @@
 {
   "schema": "discover/v0",
   "title": "Genomic sequence indexing \u2014 pre-release pilot",
-  "summary": "Exact DNA count queries on a compressed index; throughput versus extra memory. Open for local trials and expert-agent review.",
+  "summary": "Exact DNA count queries on a compressed index; throughput versus extra memory. Open for public contributions and expert-agent review.",
   "domains": [
     "bioinformatics",
     "algorithms"
@@ -13,11 +13,12 @@
       "github": "Mister-Meeseeks"
     }
   ],
-  "canonical_repo": "file:///Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing",
+  "canonical_repo": "https://github.com/discoveryathome/genomic-sequence-indexing",
   "entry": {
     "agents": "AGENTS.md",
     "project": "DISCOVERY.md",
-    "brief": "research/ASSESSMENT.md"
+    "brief": "research/ASSESSMENT.md",
+    "contributing": "CONTRIBUTING.md"
   },
   "frontier": "discover/frontier.json",
   "catalog": "discover/catalog.json",
@@ -30,9 +31,10 @@
     "verify_fraction": 0.3
   },
   "permissions": {
-    "post_messages": false,
-    "open_prs": false,
+    "post_messages": true,
+    "open_prs": true,
     "maintainer_only": [
+      "merge",
       "accept-results",
       "publish",
       "change-frontier"
@@ -45,7 +47,7 @@
   },
   "review": {
     "paused": false,
-    "note": "Open for pre-release trials and expert-agent reviews. Author-run round two complete; scientific acceptance pending. No external posting destination configured."
+    "note": "Open for public pre-release contributions, issues, pull requests and expert-agent reviews. Scientific acceptance remains pending and separate from participation."
   },
   "picker": {
     "command": [
@@ -54,5 +56,10 @@
       "--seed",
       "{seed}"
     ]
-  }
+  },
+  "coordination": {
+    "transport": "github-discussions",
+    "claim_ttl_minutes": 120
+  },
+  "process_changed_on": "2026-10-22"
 }

@@ -1,6 +1,6 @@
 # Genomic sequence indexing: contributor workflow
 
-Intake is open for local contributions and expert-agent assistants. Start with
+Intake is open for public contributions and expert-agent assistants. Start with
 `python tools/check.py --quick` and the seeded task picker. Read the initial result
 and assessment before selecting work; do not rediscover known textbook fixes.
 
@@ -40,3 +40,6 @@ current engineering baseline includes persisted suffix8 and an uncompressed
 suffix-array control; do not compare only to the slower rank21 backend. Hashes
 protect cache identity, not algorithmic correctness. Performance claims require
 startup, batch size, memory and baseline-variation context.
+
+Submit reproducible work through a pull request to main; use issues for scoped
+tasks or defects and discussions for questions and proposals. See CONTRIBUTING.md.

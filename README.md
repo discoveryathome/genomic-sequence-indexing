@@ -16,7 +16,7 @@ Read [the assessment](research/round2/ASSESSMENT.md) and
 ## First contribution
 
 Requires Python 3.12, uv, Git, make and a C compiler. Tested on macOS/Apple Clang;
-a Linux CI recipe is included but has not yet run on GitHub.
+Linux/macOS CI results are available under [Actions](https://github.com/discoveryathome/genomic-sequence-indexing/actions).
 
 ```sh
 sh tools/setup.sh
@@ -42,10 +42,18 @@ now idempotent. Native `.dylib` filenames are loader paths (on Linux they contai
 the locally compiled shared object); no native binary is distributed.
 
 Pilot-owned code is MIT. Upstream libraries and public sequence metadata retain
-their own notices in THIRD-PARTY.md. No remote or hub enrollment is configured.
+their own notices in THIRD-PARTY.md. This public repository is the canonical source.
 Source archives/Git bundles are available through tools/make_release.py.
 Intake is open; independent scientific review remains pending.
 
 ## Distribution preparation
 
 Choose a concrete package in [FIRST_TASKS.md](FIRST_TASKS.md); `python tools/pick.py --task replication` selects the first-session task. Read [EVALUATION.md](EVALUATION.md) and [FIRST_REVIEW.md](FIRST_REVIEW.md). Current baseline and platform status is in research/distribution-prep-20261022/STATUS.md.
+
+## Public contributions
+
+Read [CONTRIBUTING.md](CONTRIBUTING.md), choose a [first task](FIRST_TASKS.md),
+and submit a [pull request](https://github.com/discoveryathome/genomic-sequence-indexing/pulls) to main.
+[Issues](https://github.com/discoveryathome/genomic-sequence-indexing/issues) track reproducible defects and scoped tasks;
+[Discussions](https://github.com/discoveryathome/genomic-sequence-indexing/discussions) welcome questions, proposals and review handoffs.
+Public access is open; this remains a pre-release research pilot.
