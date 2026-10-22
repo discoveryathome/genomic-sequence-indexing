@@ -1,0 +1,33 @@
+{
+  "intake": "open",
+  "track": "replication",
+  "task": {
+    "id": "replication",
+    "question": "Produce one verified exact-count handoff",
+    "starting_points": [
+      "FIRST_TASKS.md",
+      "EVALUATION.md",
+      "research/distribution-prep-20261022/STATUS.md"
+    ],
+    "methods": [
+      "bounded experiment",
+      "reproduction",
+      "scoped review"
+    ],
+    "acceptance_gate": "candidate.json and handoff.json; run tools/verify_count.py. Equal counts with no speed improvement complete the task.",
+    "first_step": {
+      "command": [
+        "python",
+        "tools/check.py",
+        "--quick"
+      ],
+      "expected": "Current source and evidence identities pass; intake open."
+    },
+    "bottleneck_link": "research/distribution-prep-20261022/STATUS.md",
+    "first_experiment": "python tools/contribute.py --case AL123456.3 --seed 419 --out research/my-first-trial",
+    "scope_change_triggers": [
+      "Record a separate protocol before expanding the declared experiment."
+    ],
+    "budget": "30 minutes; built-in 96-query panel and five timing rounds"
+  }
+}

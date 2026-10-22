@@ -1,0 +1,5 @@
+Checked 4 packages in 6ms
+make: Entering directory '/root/.t3/scratch/2026-10-22-fetch-https-discoveryathome-org-v0-2d66bbe9/session-fb93b81a/repo/vendor/ropebwt3'
+make: Nothing to be done for 'all'.
+make: Leaving directory '/root/.t3/scratch/2026-10-22-fetch-https-discoveryathome-org-v0-2d66bbe9/session-fb93b81a/repo/vendor/ropebwt3'
+Setup complete. Activate with: source .venv/bin/activate

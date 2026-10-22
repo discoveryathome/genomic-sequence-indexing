@@ -1,0 +1,189 @@
+[
+  {
+    "label": "quick",
+    "argv": [
+      "/root/.t3/scratch/2026-10-22-fetch-https-discoveryathome-org-v0-2d66bbe9/session-fb93b81a/repo/.venv/bin/python",
+      "tools/check.py",
+      "--quick"
+    ],
+    "started_at": "2026-10-22T19:45:43.213849+00:00",
+    "elapsed_seconds": 0.9691707859747112,
+    "returncode": 0
+  },
+  {
+    "label": "picker",
+    "argv": [
+      "/root/.t3/scratch/2026-10-22-fetch-https-discoveryathome-org-v0-2d66bbe9/session-fb93b81a/repo/.venv/bin/python",
+      "tools/pick.py",
+      "--seed",
+      "334403228604265480411255179985668259939"
+    ],
+    "started_at": "2026-10-22T19:45:44.183648+00:00",
+    "elapsed_seconds": 0.0585786709561944,
+    "returncode": 0
+  },
+  {
+    "label": "trial",
+    "argv": [
+      "/root/.t3/scratch/2026-10-22-fetch-https-discoveryathome-org-v0-2d66bbe9/session-fb93b81a/repo/.venv/bin/python",
+      "tools/contribute.py",
+      "--case",
+      "AL123456.3",
+      "--seed",
+      "334403228604265480411255179985668259939",
+      "--out",
+      "research/linux-replication-fb93b81a/run/trial"
+    ],
+    "started_at": "2026-10-22T19:45:44.243034+00:00",
+    "elapsed_seconds": 25.138795888982713,
+    "returncode": 0
+  },
+  {
+    "label": "certificate",
+    "argv": [
+      "/root/.t3/scratch/2026-10-22-fetch-https-discoveryathome-org-v0-2d66bbe9/session-fb93b81a/repo/.venv/bin/python",
+      "tools/verify_count.py",
+      "/root/.t3/scratch/2026-10-22-fetch-https-discoveryathome-org-v0-2d66bbe9/session-fb93b81a/repo/research/linux-replication-fb93b81a/run/trial/candidate.json"
+    ],
+    "started_at": "2026-10-22T19:46:09.382671+00:00",
+    "elapsed_seconds": 22.43976176501019,
+    "returncode": 0
+  },
+  {
+    "label": "audit",
+    "argv": [
+      "/root/.t3/scratch/2026-10-22-fetch-https-discoveryathome-org-v0-2d66bbe9/session-fb93b81a/repo/.venv/bin/python",
+      "/root/.t3/scratch/2026-10-22-fetch-https-discoveryathome-org-v0-2d66bbe9/session-fb93b81a/repo/research/linux-replication-fb93b81a/audit.py"
+    ],
+    "started_at": "2026-10-22T19:46:31.824098+00:00",
+    "elapsed_seconds": 0.3482263999758288,
+    "returncode": 0
+  },
+  {
+    "label": "resource-0-persisted8",
+    "argv": [
+      "/root/.t3/scratch/2026-10-22-fetch-https-discoveryathome-org-v0-2d66bbe9/session-fb93b81a/repo/.venv/bin/python",
+      "tools/round2_process.py",
+      "/root/.t3/scratch/2026-10-22-fetch-https-discoveryathome-org-v0-2d66bbe9/session-fb93b81a/repo/research/linux-replication-fb93b81a/run/measurement-case.json",
+      "persisted8",
+      "102"
+    ],
+    "started_at": "2026-10-22T19:46:32.175356+00:00",
+    "elapsed_seconds": 0.31752345903078094,
+    "returncode": 0
+  },
+  {
+    "label": "resource-0-rank2a_AA",
+    "argv": [
+      "/root/.t3/scratch/2026-10-22-fetch-https-discoveryathome-org-v0-2d66bbe9/session-fb93b81a/repo/.venv/bin/python",
+      "tools/round2_process.py",
+      "/root/.t3/scratch/2026-10-22-fetch-https-discoveryathome-org-v0-2d66bbe9/session-fb93b81a/repo/research/linux-replication-fb93b81a/run/measurement-case.json",
+      "rank2a_AA",
+      "102"
+    ],
+    "started_at": "2026-10-22T19:46:32.493809+00:00",
+    "elapsed_seconds": 0.3068460809881799,
+    "returncode": 0
+  },
+  {
+    "label": "resource-0-rank2a",
+    "argv": [
+      "/root/.t3/scratch/2026-10-22-fetch-https-discoveryathome-org-v0-2d66bbe9/session-fb93b81a/repo/.venv/bin/python",
+      "tools/round2_process.py",
+      "/root/.t3/scratch/2026-10-22-fetch-https-discoveryathome-org-v0-2d66bbe9/session-fb93b81a/repo/research/linux-replication-fb93b81a/run/measurement-case.json",
+      "rank2a",
+      "102"
+    ],
+    "started_at": "2026-10-22T19:46:32.801467+00:00",
+    "elapsed_seconds": 0.2828844059840776,
+    "returncode": 0
+  },
+  {
+    "label": "resource-1-rank2a_AA",
+    "argv": [
+      "/root/.t3/scratch/2026-10-22-fetch-https-discoveryathome-org-v0-2d66bbe9/session-fb93b81a/repo/.venv/bin/python",
+      "tools/round2_process.py",
+      "/root/.t3/scratch/2026-10-22-fetch-https-discoveryathome-org-v0-2d66bbe9/session-fb93b81a/repo/research/linux-replication-fb93b81a/run/measurement-case.json",
+      "rank2a_AA",
+      "102"
+    ],
+    "started_at": "2026-10-22T19:46:33.085282+00:00",
+    "elapsed_seconds": 0.2707317700260319,
+    "returncode": 0
+  },
+  {
+    "label": "resource-1-persisted8",
+    "argv": [
+      "/root/.t3/scratch/2026-10-22-fetch-https-discoveryathome-org-v0-2d66bbe9/session-fb93b81a/repo/.venv/bin/python",
+      "tools/round2_process.py",
+      "/root/.t3/scratch/2026-10-22-fetch-https-discoveryathome-org-v0-2d66bbe9/session-fb93b81a/repo/research/linux-replication-fb93b81a/run/measurement-case.json",
+      "persisted8",
+      "102"
+    ],
+    "started_at": "2026-10-22T19:46:33.356891+00:00",
+    "elapsed_seconds": 0.28740116202970967,
+    "returncode": 0
+  },
+  {
+    "label": "resource-1-rank2a",
+    "argv": [
+      "/root/.t3/scratch/2026-10-22-fetch-https-discoveryathome-org-v0-2d66bbe9/session-fb93b81a/repo/.venv/bin/python",
+      "tools/round2_process.py",
+      "/root/.t3/scratch/2026-10-22-fetch-https-discoveryathome-org-v0-2d66bbe9/session-fb93b81a/repo/research/linux-replication-fb93b81a/run/measurement-case.json",
+      "rank2a",
+      "102"
+    ],
+    "started_at": "2026-10-22T19:46:33.645245+00:00",
+    "elapsed_seconds": 0.24391692597419024,
+    "returncode": 0
+  },
+  {
+    "label": "resource-2-rank2a",
+    "argv": [
+      "/root/.t3/scratch/2026-10-22-fetch-https-discoveryathome-org-v0-2d66bbe9/session-fb93b81a/repo/.venv/bin/python",
+      "tools/round2_process.py",
+      "/root/.t3/scratch/2026-10-22-fetch-https-discoveryathome-org-v0-2d66bbe9/session-fb93b81a/repo/research/linux-replication-fb93b81a/run/measurement-case.json",
+      "rank2a",
+      "102"
+    ],
+    "started_at": "2026-10-22T19:46:33.889883+00:00",
+    "elapsed_seconds": 0.2589312019990757,
+    "returncode": 0
+  },
+  {
+    "label": "resource-2-persisted8",
+    "argv": [
+      "/root/.t3/scratch/2026-10-22-fetch-https-discoveryathome-org-v0-2d66bbe9/session-fb93b81a/repo/.venv/bin/python",
+      "tools/round2_process.py",
+      "/root/.t3/scratch/2026-10-22-fetch-https-discoveryathome-org-v0-2d66bbe9/session-fb93b81a/repo/research/linux-replication-fb93b81a/run/measurement-case.json",
+      "persisted8",
+      "102"
+    ],
+    "started_at": "2026-10-22T19:46:34.149568+00:00",
+    "elapsed_seconds": 0.2812331049935892,
+    "returncode": 0
+  },
+  {
+    "label": "resource-2-rank2a_AA",
+    "argv": [
+      "/root/.t3/scratch/2026-10-22-fetch-https-discoveryathome-org-v0-2d66bbe9/session-fb93b81a/repo/.venv/bin/python",
+      "tools/round2_process.py",
+      "/root/.t3/scratch/2026-10-22-fetch-https-discoveryathome-org-v0-2d66bbe9/session-fb93b81a/repo/research/linux-replication-fb93b81a/run/measurement-case.json",
+      "rank2a_AA",
+      "102"
+    ],
+    "started_at": "2026-10-22T19:46:34.431552+00:00",
+    "elapsed_seconds": 0.3126770840026438,
+    "returncode": 0
+  },
+  {
+    "label": "full-check",
+    "argv": [
+      "/root/.t3/scratch/2026-10-22-fetch-https-discoveryathome-org-v0-2d66bbe9/session-fb93b81a/repo/.venv/bin/python",
+      "tools/check.py"
+    ],
+    "started_at": "2026-10-22T19:46:34.788027+00:00",
+    "elapsed_seconds": 3.009317777992692,
+    "returncode": 0
+  }
+]

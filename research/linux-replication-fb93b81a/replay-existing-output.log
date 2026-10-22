@@ -1,0 +1,2 @@
+usage: replay.py [-h] --out OUT
+replay.py: error: Choose a new directory under research/
