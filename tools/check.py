@@ -8,6 +8,8 @@ for name,path in [('manifest','discover.json'),('catalog','discover/catalog.json
 for p,h in json.loads((root/'research/manifest.json').read_text())['sha256'].items():
  assert hashlib.sha256((root/p).read_bytes()).hexdigest()==h, f'Changed frozen artifact: {p}'
 assert json.loads((root/'discover.json').read_text())['review']['paused'] is False
+for item in json.loads((root/'discover/frontier.json').read_text())['artifacts']:
+ assert hashlib.sha256((root/item['path']).read_bytes()).hexdigest()==item['sha256'], 'Frontier binding mismatch'
 if 'commit' in json.loads((root/'research/sources.json').read_text())['sources'][0]:
  assert (root/'vendor/ropebwt3/.git').exists(), 'Run tools/setup.sh to fetch pinned upstream'
  src=json.loads((root/'research/sources.json').read_text())['sources'][0]

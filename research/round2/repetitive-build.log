@@ -1,0 +1,6 @@
+[M::main_build::0.007*1.60] read 4002340 symbols from file '/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/data/heldout_derived_panel.fasta'
+[M::main_build::0.257*0.66] constructed partial BWT for 4002340 symbols
+[M::main_build::0.358*0.62] encoded the partial BWT for 4002340 symbols
+[M::main] Version: 3.10-r285-dirty
+[M::main] CMD: /Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/vendor/ropebwt3/ropebwt3 build -t1 -d -o /Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/round2/repetitive.fmd /Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/data/heldout_derived_panel.fasta
+[M::main] Real time: 0.370 sec; CPU: 0.232 sec; Peak RSS: 0.024 GB

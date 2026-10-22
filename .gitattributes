@@ -1,0 +1,3 @@
+# Preserve byte-exact public sequence files and raw diagnostic logs.
+*.fasta -whitespace
+*.log -whitespace

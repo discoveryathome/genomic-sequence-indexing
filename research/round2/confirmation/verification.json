@@ -1,0 +1,5 @@
+{
+  "passed": true,
+  "process_records": 24,
+  "oracle_note": "Same source-bound query witnesses independently checked in the full round-two verifier; every confirmation native result was compared during execution."
+}

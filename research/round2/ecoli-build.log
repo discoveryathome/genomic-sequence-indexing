@@ -1,0 +1,6 @@
+[M::main_build::0.017*1.15] read 9283306 symbols from file '/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/data/development_ecoli.fasta'
+[M::main_build::0.460*0.94] constructed partial BWT for 9283306 symbols
+[M::main_build::0.936*0.93] encoded the partial BWT for 9283306 symbols
+[M::main] Version: 3.10-r285-dirty
+[M::main] CMD: /Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/vendor/ropebwt3/ropebwt3 build -t1 -d -o /Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/round2/ecoli.fmd /Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/data/development_ecoli.fasta
+[M::main] Real time: 1.031 sec; CPU: 0.961 sec; Peak RSS: 0.070 GB

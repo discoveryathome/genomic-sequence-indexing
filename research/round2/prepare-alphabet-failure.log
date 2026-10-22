@@ -1,0 +1,15 @@
+prepare ecoli
+prepare AE006468.2
+prepare AE004091.2
+prepare AE000511.1
+Traceback (most recent call last):
+  File "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/tools/run_round2.py", line 120, in <module>
+    if a.prepare:prepare()
+                 ^^^^^^^^^
+  File "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/tools/run_round2.py", line 54, in prepare
+    seqs=read_fasta(ROOT/data);index=build/(name+'.fmd');table=build/(name+'.cache');sa=build/(name+'.sa')
+         ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/src/trial.py", line 15, in read_fasta
+    assert seqs and all(set(s)<=set('ACGTN') for s in seqs);return seqs
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

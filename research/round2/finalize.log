@@ -1,0 +1,21 @@
+{
+  "native_method_query_comparisons": 9865,
+  "mismatches": 0,
+  "fresh_process_runs": 216,
+  "fresh_corpora_with_100k_total_gain": [
+    "AE006468.2",
+    "AL123456.3"
+  ],
+  "max_AA_median_relative_drift": 0.27463891751170055,
+  "correctness_gate": true,
+  "observed_end_to_end_gate": true,
+  "timing_qualification_required": true,
+  "external_scientific_review": "pending",
+  "scope": "Computational exact-string counts only; public references; no wet lab or biological-effect claims"
+}
+ecoli long reduction 15.11 100k total reduction -4.67 100 query total reduction 8.41
+AE006468.2 long reduction 55.81 100k total reduction 10.93 100 query total reduction -31.11
+AE004091.2 long reduction 3.7 100k total reduction -14.1 100 query total reduction 16.55
+AL123456.3 long reduction 31.35 100k total reduction 16.02 100 query total reduction 9.6
+repetitive long reduction 23.07 100k total reduction 11.32 100 query total reduction -2.2
+pooled long reduction 22.2 100k total reduction 14.69 100 query total reduction -13.41

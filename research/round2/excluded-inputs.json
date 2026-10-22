@@ -1,0 +1,7 @@
+[
+  {
+    "accession": "AE000511.1",
+    "source_sha256": "a6b6a0518e45c25943c940f4300d3adbbfea4483de52d7931439f0df8d495abb",
+    "reason": "Outside declared literal A/C/G/T/N alphabet; retained raw, not silently normalized"
+  }
+]

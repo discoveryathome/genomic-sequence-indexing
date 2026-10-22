@@ -1,0 +1,38 @@
+[
+  {
+    "accession": "AE006468.2",
+    "url": "https://www.ebi.ac.uk/ena/browser/api/fasta/AE006468.2?download=false",
+    "path": "data/round2/AE006468.2.fasta",
+    "bytes": 4938516,
+    "sha256": "e96900a5de6fda7712a7108f774131218bccd922e81c84008bb7449178b90172",
+    "header": ">ENA|AE006468|AE006468.2 Salmonella enterica subsp. enterica serovar Typhimurium str. LT2, complete genome.",
+    "status": "downloaded"
+  },
+  {
+    "accession": "AE004091.2",
+    "url": "https://www.ebi.ac.uk/ena/browser/api/fasta/AE004091.2?download=false",
+    "path": "data/round2/AE004091.2.fasta",
+    "bytes": 6368882,
+    "sha256": "a01179e7d2f95eb7809a0857cd41dd36f59ff366146c662c747148e76677f351",
+    "header": ">ENA|AE004091|AE004091.2 Pseudomonas aeruginosa PAO1, complete genome.",
+    "status": "downloaded"
+  },
+  {
+    "accession": "AE000511.1",
+    "url": "https://www.ebi.ac.uk/ena/browser/api/fasta/AE000511.1?download=false",
+    "path": "data/round2/AE000511.1.fasta",
+    "bytes": 1695734,
+    "sha256": "a6b6a0518e45c25943c940f4300d3adbbfea4483de52d7931439f0df8d495abb",
+    "header": ">ENA|AE000511|AE000511.1 Helicobacter pylori 26695, complete genome.",
+    "status": "downloaded"
+  },
+  {
+    "accession": "AL123456.3",
+    "url": "https://www.ebi.ac.uk/ena/browser/api/fasta/AL123456.3?download=false",
+    "path": "data/round2/AL123456.3.fasta",
+    "bytes": 4485133,
+    "sha256": "d415b78129285dae5effd3a658fa52b22d34c1eca2668b7ca6bcd33ee972a857",
+    "header": ">ENA|AL123456|AL123456.3 Mycobacterium tuberculosis H37Rv complete genome.",
+    "status": "downloaded"
+  }
+]

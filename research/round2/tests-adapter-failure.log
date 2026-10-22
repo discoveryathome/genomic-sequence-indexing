@@ -1,0 +1,91 @@
+EEE                                                                      [100%]
+==================================== ERRORS ====================================
+_________ ERROR at setup of test_all_short_strings_and_long_boundaries _________
+
+tmp_path = PosixPath('/private/var/folders/sd/yrr853rn73qdgdgdmps82gfh0000gn/T/pytest-of-colkitt/pytest-93/test_all_short_strings_and_lon0')
+
+    @pytest.fixture()
+    def fixture(tmp_path):
+        seqs=['AAAACGTNAC','GTAAAAC','NNACGTACGT'];fa=tmp_path/'test.fa';index=tmp_path/'test.fmd'
+        fa.write_text(''.join(f'>s{i}\n{s}\n' for i,s in enumerate(seqs)))
+        subprocess.run([str(ROOT/'vendor/ropebwt3/ropebwt3'),'build','-t1','-d','-o',str(index),str(fa)],check=True,capture_output=True)
+        libs=libraries();table=tmp_path/'table.cache';sa=tmp_path/'test.sa'
+>       create_cache(index,table,libs);build_sa(seqs,sa,libs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_round2.py:17: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+index = PosixPath('/private/var/folders/sd/yrr853rn73qdgdgdmps82gfh0000gn/T/pytest-of-colkitt/pytest-93/test_all_short_strings_and_lon0/test.fmd')
+table = PosixPath('/private/var/folders/sd/yrr853rn73qdgdgdmps82gfh0000gn/T/pytest-of-colkitt/pytest-93/test_all_short_strings_and_lon0/table.cache')
+lib = (<CDLL '/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/cache...ilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/suffix_array.dylib', handle 74df47a0 at 0x109891f10>)
+seed = 8
+
+    def create_cache(index, table, lib, seed=8):
+        table = Path(table)
+>       p = lib.load_index(str(index).encode(), seed)
+            ^^^^^^^^^^^^^^
+E       AttributeError: 'tuple' object has no attribute 'load_index'
+
+src/round2_index.py:44: AttributeError
+______________ ERROR at setup of test_cache_wrong_hash_and_index _______________
+
+tmp_path = PosixPath('/private/var/folders/sd/yrr853rn73qdgdgdmps82gfh0000gn/T/pytest-of-colkitt/pytest-93/test_cache_wrong_hash_and_inde0')
+
+    @pytest.fixture()
+    def fixture(tmp_path):
+        seqs=['AAAACGTNAC','GTAAAAC','NNACGTACGT'];fa=tmp_path/'test.fa';index=tmp_path/'test.fmd'
+        fa.write_text(''.join(f'>s{i}\n{s}\n' for i,s in enumerate(seqs)))
+        subprocess.run([str(ROOT/'vendor/ropebwt3/ropebwt3'),'build','-t1','-d','-o',str(index),str(fa)],check=True,capture_output=True)
+        libs=libraries();table=tmp_path/'table.cache';sa=tmp_path/'test.sa'
+>       create_cache(index,table,libs);build_sa(seqs,sa,libs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_round2.py:17: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+index = PosixPath('/private/var/folders/sd/yrr853rn73qdgdgdmps82gfh0000gn/T/pytest-of-colkitt/pytest-93/test_cache_wrong_hash_and_inde0/test.fmd')
+table = PosixPath('/private/var/folders/sd/yrr853rn73qdgdgdmps82gfh0000gn/T/pytest-of-colkitt/pytest-93/test_cache_wrong_hash_and_inde0/table.cache')
+lib = (<CDLL '/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/cache...ilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/suffix_array.dylib', handle 74df47a0 at 0x109893530>)
+seed = 8
+
+    def create_cache(index, table, lib, seed=8):
+        table = Path(table)
+>       p = lib.load_index(str(index).encode(), seed)
+            ^^^^^^^^^^^^^^
+E       AttributeError: 'tuple' object has no attribute 'load_index'
+
+src/round2_index.py:44: AttributeError
+_____________ ERROR at setup of test_cache_abi_and_invalid_queries _____________
+
+tmp_path = PosixPath('/private/var/folders/sd/yrr853rn73qdgdgdmps82gfh0000gn/T/pytest-of-colkitt/pytest-93/test_cache_abi_and_invalid_que0')
+
+    @pytest.fixture()
+    def fixture(tmp_path):
+        seqs=['AAAACGTNAC','GTAAAAC','NNACGTACGT'];fa=tmp_path/'test.fa';index=tmp_path/'test.fmd'
+        fa.write_text(''.join(f'>s{i}\n{s}\n' for i,s in enumerate(seqs)))
+        subprocess.run([str(ROOT/'vendor/ropebwt3/ropebwt3'),'build','-t1','-d','-o',str(index),str(fa)],check=True,capture_output=True)
+        libs=libraries();table=tmp_path/'table.cache';sa=tmp_path/'test.sa'
+>       create_cache(index,table,libs);build_sa(seqs,sa,libs)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+tests/test_round2.py:17: 
+_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ 
+
+index = PosixPath('/private/var/folders/sd/yrr853rn73qdgdgdmps82gfh0000gn/T/pytest-of-colkitt/pytest-93/test_cache_abi_and_invalid_que0/test.fmd')
+table = PosixPath('/private/var/folders/sd/yrr853rn73qdgdgdmps82gfh0000gn/T/pytest-of-colkitt/pytest-93/test_cache_abi_and_invalid_que0/table.cache')
+lib = (<CDLL '/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/cache...ilots/exploratory-pilots-20261022/genomic-sequence-indexing/build/suffix_array.dylib', handle 74df47a0 at 0x109893050>)
+seed = 8
+
+    def create_cache(index, table, lib, seed=8):
+        table = Path(table)
+>       p = lib.load_index(str(index).encode(), seed)
+            ^^^^^^^^^^^^^^
+E       AttributeError: 'tuple' object has no attribute 'load_index'
+
+src/round2_index.py:44: AttributeError
+=========================== short test summary info ============================
+ERROR tests/test_round2.py::test_all_short_strings_and_long_boundaries - Attr...
+ERROR tests/test_round2.py::test_cache_wrong_hash_and_index - AttributeError:...
+ERROR tests/test_round2.py::test_cache_abi_and_invalid_queries - AttributeErr...
+3 errors in 0.38s

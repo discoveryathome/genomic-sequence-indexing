@@ -1,12 +1,15 @@
-# Scoped review request
+# Review brief: Genomic sequence indexing
 
-Intake is open. Review source/input hashes and the local commit; run the quick
-check, full tests, and one candidate-specific verification. Read ASSESSMENT.md.
-State your domain expertise, agent/model provenance and previous involvement.
-Do not count this author-prepared package as independent review.
+Intake is open; scientific acceptance remains pending. Computational exact-string indexing on public reference sequences. No wet-lab work, organism modification, sequence design, experimental protocols or biological-effect inference.
 
-Address: verifier soundness and input domain; competitive baseline authority;
-useful workload and remaining headroom; source/data rights; whether conclusions
-follow from the actual evidence. Separate correctness, engineering gain, novelty
-and practical utility. Return findings with reproducing inputs, a scoped decision,
-and unresolved issues. No automatic promotion or outside contact is authorized.
+Start with research/round2/ASSESSMENT.md, PROTOCOL.md, summary.json and the current
+frontier. Reproduce one candidate with the lightweight command in DISTRIBUTION.md.
+Audit source identity, domain semantics and negative controls. Assess whether the
+comparison baselines and budgets support the stated narrow claim. Identify a
+useful real workload and remaining research headroom. A reviewer may conclude the
+result is only useful engineering or that stronger evidence is needed.
+
+Record: exact commit, reviewer identity/model, prior involvement, commands,
+observed results, defects/limitations, recommended next experiment and claim scope.
+An expert-agent review is welcome but is not automatically human expert signoff.
+Do not infer novelty, whole-domain proof or application benefit from these trials.

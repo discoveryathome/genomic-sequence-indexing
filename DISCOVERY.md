@@ -20,3 +20,23 @@ Scientific acceptance requires a scoped review by someone other than the author.
 Expert-agent review is welcome now; no automatic human expertise or independent
 signoff is inferred. Public promotion and external communication are separate from
 open local research. See PARTICIPATION.md.
+
+## Current distribution round
+
+Read research/round2/ASSESSMENT.md and DISTRIBUTION.md. Work is computational
+exact-string indexing on public reference sequences: correctness, runtime and
+memory. It includes no wet-lab work or organism modification.
+
+Start with a bounded replication:
+
+```sh
+python tools/contribute.py --case AL123456.3 --seed 419 --out research/my-first-trial
+python tools/verify_count.py research/my-first-trial/candidate.json
+```
+
+The command rebuilds missing ignored indexes, checks both methods against a
+separate direct-count oracle, retains timings and writes a complete handoff. The
+current engineering baseline includes persisted suffix8 and an uncompressed
+suffix-array control; do not compare only to the slower rank21 backend. Hashes
+protect cache identity, not algorithmic correctness. Performance claims require
+startup, batch size, memory and baseline-variation context.

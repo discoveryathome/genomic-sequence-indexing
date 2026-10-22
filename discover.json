@@ -1,6 +1,6 @@
 {
   "schema": "discover/v0",
-  "title": "Genomic sequence indexing \u2014 local pilot",
+  "title": "Genomic sequence indexing \u2014 pre-release pilot",
   "summary": "Exact DNA count queries on a compressed index; throughput versus extra memory. Open for local trials and expert-agent review.",
   "domains": [
     "bioinformatics",
@@ -45,7 +45,7 @@
   },
   "review": {
     "paused": false,
-    "note": "Local research and expert-agent review are open. Scientific acceptance is separate. No remote exists; canonical_repo is the local working repository URI."
+    "note": "Open for pre-release trials and expert-agent reviews. Author-run round two complete; scientific acceptance pending. No external posting destination configured."
   },
   "picker": {
     "command": [

@@ -1,25 +1,29 @@
 {
   "schema": "discover-frontier/v0",
-  "statement": "Native suffix-table follow-up matches all exact-count oracles and shows provisional median query gains with 1 MiB extra storage; no novelty or isolated performance claim.",
-  "status": "Local author-run trial complete; open for contributions and expert-agent review; scientific acceptance pending.",
+  "statement": "Round two verified 9,865 sampled method/query counts, measured 216 fresh processes and added a fixed confirmation. Persisted suffix8 has modest observed gains with explicit startup/memory and timing-noise limits.",
+  "status": "Open for pre-release contributor trials and expert-agent review; scientific acceptance pending.",
   "evidence_level": [
     "author-checked"
   ],
-  "scope": "Only the pinned source, explicit domains, sampled workloads and machine in this package; timing noise and baseline limitations are documented.",
+  "scope": "Computational exact literal substring counting on public reference sequences. No wet-lab or biological-effect work; no novelty or production-workload claim.",
   "review": "research/review.json",
   "updated_on": "2026-10-22",
   "artifacts": [
     {
-      "path": "results/trial.json",
-      "sha256": "669329e62b440a4c7d15174abd3f8db80da317a24c142ae401e0a10fb696f4a9"
+      "path": "research/round2/trial.json",
+      "sha256": "3ec7ef8e914c46a0f80a6e0f5ec0568abe3a1de75c3753b243ed4cccd8a03310"
     },
     {
-      "path": "src/trial.py",
-      "sha256": "119596dcba77c87a3a9bdf1f0de9c931267c2b09dc843023bf4063589681d152"
+      "path": "research/round2/summary.json",
+      "sha256": "bc2eebc8a25f55df0f102775e01aeaa3217ccb848a267d655cf76bda05b5e27a"
     },
     {
-      "path": "results/followup/trial.json",
-      "sha256": "ca72ec1098ea0de5f46f3d4c8d94514343afee16a2d3ffc722f81c1604a5049c"
+      "path": "research/round2/confirmation/results.json",
+      "sha256": "f82bdb457894271add4dfccb00b92c4bdbfc5962c9bf69fe969b0cd78669dd73"
+    },
+    {
+      "path": "research/round2/PROTOCOL.md",
+      "sha256": "841e163b912ede21d4a658c074f5c2429d8b4afa236a07f11b828b1f2f73f3fc"
     }
   ],
   "reproduce": "python tools/check.py",
@@ -27,12 +31,12 @@
   "assumptions": [
     {
       "id": "review",
-      "statement": "No independent external review or novelty assessment has been completed.",
+      "statement": "Independent external review and upstream-usefulness assessment remain open.",
       "status": "open"
     },
     {
       "id": "performance",
-      "statement": "Performance needs isolated replication and representative workload validation.",
+      "statement": "Confirmation improved repeatability but quiet-machine replication, real traces and a second competitive compressed index remain needed.",
       "status": "open"
     }
   ]

@@ -1,0 +1,12 @@
+prepare ecoli
+Traceback (most recent call last):
+  File "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/tools/run_round2.py", line 108, in <module>
+    if a.prepare:prepare()
+                 ^^^^^^^^^
+  File "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/tools/run_round2.py", line 48, in prepare
+    start=time.perf_counter();meta=create_cache(index,table,libs);cache_seconds=time.perf_counter()-start
+                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/colkitt/discover-work/incubatedPilots/exploratory-pilots-20261022/genomic-sequence-indexing/src/round2_index.py", line 44, in create_cache
+    p = lib.load_index(str(index).encode(), seed)
+        ^^^^^^^^^^^^^^
+AttributeError: 'tuple' object has no attribute 'load_index'

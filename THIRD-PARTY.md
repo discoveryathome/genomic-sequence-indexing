@@ -19,3 +19,21 @@ segment (0.5% substitutions) and two artificial low-complexity/N controls. It is
 not eight independent sampled genomes and cannot support population claims.
 Queries are locally generated synthetic exact strings, not real sequencing reads.
 Both strands are indexed; palindromic hits are counted once per indexed strand.
+
+## Round-two computational indexing data and control
+
+Additional public accession records and exact response hashes are listed in
+research/round2/data-sources.json. Headers and original files are retained, under
+the ENA/INSDC reuse policy linked above. AE000511.1 is retained as an excluded
+input because it contains symbols beyond the declared literal A/C/G/T/N alphabet.
+The supported pool concatenates the three eligible records with contig boundaries
+preserved; it is not an independent biological cohort.
+
+The second architectural control is pilot-owned conventional suffix-array binary
+search using the existing pinned Ropebwt3 copy of libsais for construction. Libsais
+is Apache-2.0 (Ilya Grebnov); no vendor source or native library is bundled in our
+source distribution. This is an uncompressed index control, not a claim to beat
+optimized production compressed indexes.
+
+All round-two queries are generated count-query workloads, not experimental
+protocols, engineered sequences for biological use or biological-effect predictions.

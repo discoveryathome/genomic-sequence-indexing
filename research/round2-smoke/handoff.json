@@ -1,0 +1,35 @@
+{
+  "kind": "bounded author/contributor software-index replication",
+  "case": "AL123456.3",
+  "seed": 419,
+  "samples_seconds_per_query": {
+    "rank2a": [
+      2.0175408823050414e-05,
+      1.9250531434355412e-05,
+      1.9890971495496e-05,
+      2.3719036207516112e-05,
+      2.4644321620500848e-05
+    ],
+    "persisted8": [
+      1.4845465707099613e-05,
+      1.4575735286937333e-05,
+      1.8763521631412645e-05,
+      1.772103828889336e-05,
+      1.7380433307741494e-05
+    ]
+  },
+  "median_seconds_per_query": {
+    "rank2a": 2.0175408823050414e-05,
+    "persisted8": 1.7380433307741494e-05
+  },
+  "verified": {
+    "passed": true,
+    "queries": 102,
+    "dataset_sha256": "d415b78129285dae5effd3a658fa52b22d34c1eca2668b7ca6bcd33ee972a857"
+  },
+  "elapsed_seconds": 14.116120208054781,
+  "novelty_claim": false,
+  "workload_limit": "Fresh generated queries on an exposed public corpus; warm throughput only",
+  "contributor_provenance": "Codex assistant in maintainer session; same author as setup/trials, not an independent donor or scientific reviewer.",
+  "scientific_review": "pending"
+}

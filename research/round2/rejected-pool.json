@@ -1,0 +1,4 @@
+{
+  "sha256": "06946b38e5be6ce72599ddb31ad569749a7440d7caa4749cfbfd43f532ce5547",
+  "reason": "Contains unsupported ambiguity symbols; reproducible by concatenating four raw sources"
+}

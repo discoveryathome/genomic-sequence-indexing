@@ -16,3 +16,7 @@ No user-level or scientific acceptance is inferred from a speedup. Do not descri
 known arithmetic, Taylor series, or suffix lookup as a novel algorithm. A new
 workload, minimized defect or justified negative result can be useful. Follow the
 user's actual permission before external posting; local research is open.
+
+Round two is the current handoff: read DISTRIBUTION.md and research/round2/ASSESSMENT.md.
+Use the current archive/baselines and the bounded contribution command. Intake remains open.
+Scope is computational exact-string indexing only; no wet-lab or biological-effect work.
