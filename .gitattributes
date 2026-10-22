@@ -1,1 +1,4 @@
+# Preserve byte-exact public sequence files and raw diagnostic logs.
+*.fasta -whitespace
+*.log -whitespace
 research/distribution-prep-20261022/*.patch -whitespace

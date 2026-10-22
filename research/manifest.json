@@ -2,7 +2,7 @@
   "scope": "Current distribution-preparation package. Prior hashes and changed entry points archived under research/distribution-prep-20261022/. Experiment evidence retained; native builds and environments excluded.",
   "sha256": {
     ".dockerignore": "36f9d053e047af1901a235fdbf03571eb289777d6758b780b6275536859070a9",
-    ".gitattributes": "c47b0bcb8f6b0fa8a7fadf89c6bc52b5e5bd2f9ec96e3cff89501ac1f1ae137d",
+    ".gitattributes": "ecf56c5935f3782b4b9c0a7ea4b3bf48455ff2bc2d5c550277ef88a442e2b400",
     ".github/workflows/check.yml": "0d75f7ee9b3069eeabb484bc9ffe4a5f6f0c7c22c517af5229b24f5f9d54a37c",
     ".gitignore": "82d9d725439e0268a221b1b8855c890d089c5d98dff7d992d442e036a94b0b3d",
     "AGENTS.md": "71c091ca8bad532f29a12c2a6c346e5ecec79b3871bb1518d579053c955e176c",
@@ -92,6 +92,7 @@
     "research/distribution-prep-20261022/build-sdsl.log": "1ef48ae2f86923f1b0cb3d79ee53bb029a58508a3779b9a355bf2b7c9880615e",
     "research/distribution-prep-20261022/comparison.log": "4d29b2d6db00020013d79dbe11b4bfaf524bb2fadc106e2d93bffb3a1bfb7e2c",
     "research/distribution-prep-20261022/fetch-sdsl.log": "aac572fdb9097d002a2a53dc37f444a46fd5291d6a337e73f2b571c91621ef6c",
+    "research/distribution-prep-20261022/prior-files/.gitattributes": "c47b0bcb8f6b0fa8a7fadf89c6bc52b5e5bd2f9ec96e3cff89501ac1f1ae137d",
     "research/distribution-prep-20261022/prior-files/.github/workflows/check.yml": "0d75f7ee9b3069eeabb484bc9ffe4a5f6f0c7c22c517af5229b24f5f9d54a37c",
     "research/distribution-prep-20261022/prior-files/AGENTS.md": "24499a35439ad942b8ade59686136a04c6a6499b5142adbbab1b7358cd7de20c",
     "research/distribution-prep-20261022/prior-files/DISCOVERY.md": "ea5acb2ec0f1872ab4d23613f7a5f582aca7d66ba31abc9a89fba0eb08878e2d",
