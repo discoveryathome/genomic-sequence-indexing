@@ -1,0 +1,47 @@
+{
+  "recorded_at": "2026-10-22T19:45:43.192075+00:00",
+  "git_head": "e40473dc6737647068780cc23c090fa5765f1d3e",
+  "python": "3.12.15 (main, Oct 21 2026, 17:47:06) [Clang 23.1.3 ]",
+  "platform": "Linux-6.12.113+deb13-amd64-x86_64-with-glibc2.41",
+  "machine": "x86_64",
+  "cpu_count": 16,
+  "load_average_start": [
+    5.37841796875,
+    6.77783203125,
+    6.28662109375
+  ],
+  "compiler": "cc (Debian 14.2.0-19) 14.2.0",
+  "dependencies": {
+    "numpy": "2.5.4",
+    "mpmath": "1.4.1",
+    "pytest": "9.1.1",
+    "jsonschema": "4.26.0"
+  },
+  "source_sha256": {
+    "tools/contribute.py": "278f37f99ffdf36899811d1dacf96087046520357e67055998b317d1b3cb9748",
+    "tools/verify_count.py": "c4816e56cc9a750cb535681029140f0aa58f0ce0f57eb39c4f3b7cabf1088720",
+    "tools/round2_process.py": "30715485e318beec1050c513b295247de5ca688de1cc6a76d562b93ce35bc4c1",
+    "tools/rebuild_round2.py": "d36d05222ef5d470d5823b6dec9f541fadd33222e56093ffae4cf1c5447f761f",
+    "tools/build.sh": "ee75bdfc3f31bd5f98d35a4fd1ea65143b15c83894e5ac29d79386a8eed5fcda",
+    "tools/build_round2.sh": "9490725a18d46d839dae3acefb0f9960beb8475611c6c19e050d2598f8468475",
+    "src/trial.py": "119596dcba77c87a3a9bdf1f0de9c931267c2b09dc843023bf4063589681d152",
+    "src/round2_index.py": "b22b0bdf4b9960fec892017f3a111754f3d3647938a8a1257bd8289ae25dea00",
+    "src/cache.c": "aefe8b1bd7e69fcfe4fb19a3f8a55f7ad8de8c608e3e35606c63663332fc8869",
+    "src/count.c": "5592d42b35c7573690ceec925f33308e85f4056aefa5b55ce5da01b240491052",
+    "src/suffix_array.c": "c09f18c71cd424170ebf4f924a300540688cec435ddb70cde91c488e3af55c79",
+    "research/sources.json": "7cdd8296f0a20abd8d06dc79730b3fe7cf991842fd85169f765b482a48c14d22",
+    "research/linux-replication-fb93b81a/protocol.json": "47f73392f8f8f45a23fd43c606aa58a1b4119e007d9bfd1c34b8d38a06ad51ad",
+    "research/linux-replication-fb93b81a/audit.py": "b2553be6febef2a3b7bdf7a4ef762b9b7e3f7ec4cacf1a72f68eb11a80b79bcd",
+    "research/linux-replication-fb93b81a/replay.py": "ce31b878548275510e95df26713e37a5b53b4fff8375d28d5b5dffc5db547154"
+  },
+  "compiler_flags": {
+    "ropebwt3": "make omp=0 -j2; -g -Wall -Wc++-compat -O3",
+    "wrappers": "-O3 -fPIC -shared -Ivendor/ropebwt3; no fast-math"
+  },
+  "authorship": {
+    "agent": "Codex (gpt-6-astra)",
+    "prior_involvement": "none",
+    "human_domain_expertise_claimed": false
+  },
+  "exposure": "Existing public corpus and archived baseline evidence were read; this is within-corpus replication, not held-out evaluation."
+}

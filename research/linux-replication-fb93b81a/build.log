@@ -1,0 +1,22 @@
+make: Entering directory '/root/.t3/scratch/2026-10-22-fetch-https-discoveryathome-org-v0-2d66bbe9/session-fb93b81a/repo/vendor/ropebwt3'
+gcc -c -g -Wall -Wc++-compat -O3   libsais.c -o libsais.o
+gcc -c -g -Wall -Wc++-compat -O3   libsais64.c -o libsais64.o
+gcc -c -g -Wall -Wc++-compat -O3   kalloc.c -o kalloc.o
+gcc -c -g -Wall -Wc++-compat -O3   kthread.c -o kthread.o
+gcc -c -g -Wall -Wc++-compat -O3   misc.c -o misc.o
+gcc -c -g -Wall -Wc++-compat -O3   io.c -o io.o
+gcc -c -g -Wall -Wc++-compat -O3  -DRLD_HAVE_BRE  rld0.c -o rld0.o
+gcc -c -g -Wall -Wc++-compat -O3   bre.c -o bre.o
+gcc -c -g -Wall -Wc++-compat -O3   rle.c -o rle.o
+gcc -c -g -Wall -Wc++-compat -O3   rope.c -o rope.o
+gcc -c -g -Wall -Wc++-compat -O3   mrope.c -o mrope.o
+gcc -c -g -Wall -Wc++-compat -O3   dawg.c -o dawg.o
+gcc -c -g -Wall -Wc++-compat -O3   fm-index.c -o fm-index.o
+gcc -c -g -Wall -Wc++-compat -O3   ssa.c -o ssa.o
+gcc -c -g -Wall -Wc++-compat -O3   sais-ss.c -o sais-ss.o
+gcc -c -g -Wall -Wc++-compat -O3   build.c -o build.o
+gcc -c -g -Wall -Wc++-compat -O3   search.c -o search.o
+gcc -c -g -Wall -Wc++-compat -O3   bwa-sw.c -o bwa-sw.o
+gcc -c -g -Wall -Wc++-compat -O3   main.c -o main.o
+gcc -g -Wall -Wc++-compat -O3 libsais.o libsais64.o kalloc.o kthread.o misc.o io.o rld0.o bre.o rle.o rope.o mrope.o dawg.o fm-index.o ssa.o sais-ss.o build.o search.o bwa-sw.o main.o -o ropebwt3 -lpthread -lz -lm
+make: Leaving directory '/root/.t3/scratch/2026-10-22-fetch-https-discoveryathome-org-v0-2d66bbe9/session-fb93b81a/repo/vendor/ropebwt3'

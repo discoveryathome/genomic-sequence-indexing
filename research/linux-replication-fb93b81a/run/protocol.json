@@ -1,0 +1,108 @@
+{
+  "schema": "session-protocol/v1",
+  "recorded_at": "2026-10-22T19:43:51.387Z",
+  "base_commit": "e40473dc6737647068780cc23c090fa5765f1d3e",
+  "task": "replication",
+  "scope": "Linux first-contributor replication of rank2a versus persisted8 on AL123456.3 with 96 generated queries and five timing rounds, plus a scoped exact-count verifier negative-control audit; no tuning",
+  "seed_hex": "fb93b81a026a774403a628358217c063",
+  "seed_decimal": "334403228604265480411255179985668259939",
+  "picker": "python tools/pick.py --seed 334403228604265480411255179985668259939",
+  "claim": "https://github.com/discoveryathome/genomic-sequence-indexing/discussions/2#discussioncomment-19131407",
+  "priorities": {
+    "revision": 3,
+    "open_handoff_comments": 0,
+    "open_pull_requests": 0,
+    "related_issue": 3
+  },
+  "objective": "Reproduce exact counts and report bounded Linux timing/resource evidence; no implementation selection or tuning.",
+  "case": "AL123456.3",
+  "dataset": "data/round2/AL123456.3.fasta",
+  "dataset_sha256": "d415b78129285dae5effd3a658fa52b22d34c1eca2668b7ca6bcd33ee972a857",
+  "methods": [
+    "rank2a",
+    "persisted8"
+  ],
+  "baseline": "rank2a",
+  "upstream_commit": "b408339d0fb08fe0f4da5140507a6b8b854fa12f",
+  "warm_measurement": {
+    "generated_queries": 96,
+    "fixed_queries": 6,
+    "rounds": 5,
+    "native_repetitions_per_query": 10,
+    "randomized_order": "repository contribute.py with seed_decimal"
+  },
+  "resource_measurement": {
+    "batch_queries": 102,
+    "methods": [
+      "rank2a",
+      "rank2a_AA",
+      "persisted8"
+    ],
+    "rounds": 3,
+    "order_seed_decimal": "334403228604265480411255179985668259939",
+    "metrics": [
+      "startup including persisted cache validation/hashing",
+      "query seconds",
+      "external process wall seconds",
+      "whole-process peak RSS bytes",
+      "index and table bytes"
+    ],
+    "filesystem_cache": "unflushed; fresh processes"
+  },
+  "verifier_audit": {
+    "reference_sequences": [
+      "AAAAN",
+      "CGT",
+      "ATAT",
+      "NN"
+    ],
+    "queries": [
+      "AA",
+      "N",
+      "AT",
+      "ACG",
+      "NCG",
+      "ACGTN",
+      ""
+    ],
+    "checks": [
+      "overlap",
+      "literal N",
+      "palindrome counted per strand",
+      "reverse complement",
+      "contig boundary",
+      "absence",
+      "invalid empty query",
+      "wrong count",
+      "wrong hash",
+      "negative count",
+      "boolean count",
+      "non-integral count",
+      "invalid alphabet",
+      "empty certificate",
+      "dataset path outside data"
+    ]
+  },
+  "source_freeze": "Unchanged tracked source at base; SHA-256 captured before experiment in environment.json. No parameter tuning or winner selection.",
+  "stop_rule": "One built-in replication plus declared controls and nine resource processes; stop new work by 20:20 UTC, reserve final 15 minutes for verification and handoff. Record failure without weakening checker.",
+  "limits": {
+    "wall_minutes": 60,
+    "working_disk_bytes": 2147483648,
+    "network": "Dependency setup only; corpus is already tracked; no external services receive code or results except authorized repository publication."
+  },
+  "evidence_level": "author-checked",
+  "authorship": {
+    "agent": "Codex (gpt-6-astra)",
+    "prior_involvement": "none",
+    "human_domain_expertise_claimed": false
+  },
+  "exposure": "Existing public corpus and archived baseline evidence were read; this is within-corpus replication, not held-out evaluation.",
+  "not_planned": [
+    "SDSL rebuild",
+    "new corpora",
+    "full performance-suite replay",
+    "quiet-machine or cross-platform replication",
+    "steady-state native-allocation measurement",
+    "scientific acceptance"
+  ]
+}

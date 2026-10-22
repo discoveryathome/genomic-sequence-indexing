@@ -1,0 +1,7 @@
+Command: tools-env/bin/uv pip freeze --python repo/.venv/bin/python
+Exit: 2
+error: Could not acquire lock
+  cause: Could not create temporary file
+  cause: Read-only file system (os error 30) at path "/root/.cache/uv/.tmpUVn7cA"
+
+Resolution: set UV_CACHE_DIR=uv-cache within the session, as for installation.

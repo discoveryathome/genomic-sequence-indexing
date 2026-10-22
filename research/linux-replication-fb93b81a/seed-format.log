@@ -1,0 +1,2 @@
+usage: pick.py [-h] [--seed SEED] [--task TASK]
+pick.py: error: argument --seed: invalid int value: 'fb93b81a026a774403a628358217c063'

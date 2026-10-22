@@ -1,0 +1,117 @@
+{
+  "fixture_sha256": "c7ed16bf861b7cc13c1c689d0561a1c3a61a00e06caf3afa4772af1085139568",
+  "controls": [
+    {
+      "name": "overlap",
+      "query": "AA",
+      "expected": 3
+    },
+    {
+      "name": "literal-N",
+      "query": "N",
+      "expected": 6
+    },
+    {
+      "name": "palindrome-both-strands",
+      "query": "AT",
+      "expected": 4
+    },
+    {
+      "name": "reverse-complement",
+      "query": "ACG",
+      "expected": 1
+    },
+    {
+      "name": "contig-boundary",
+      "query": "NCG",
+      "expected": 0
+    },
+    {
+      "name": "absent",
+      "query": "ACGTN",
+      "expected": 0
+    }
+  ],
+  "rejections": [
+    {
+      "name": "semantic-overlap",
+      "error": "('Count mismatch', 'AA', 2, 3)"
+    },
+    {
+      "name": "semantic-literal-N",
+      "error": "('Count mismatch', 'N', 28, 6)"
+    },
+    {
+      "name": "semantic-palindrome-both-strands",
+      "error": "('Count mismatch', 'AT', 2, 4)"
+    },
+    {
+      "name": "semantic-reverse-complement",
+      "error": "('Count mismatch', 'ACG', 0, 1)"
+    },
+    {
+      "name": "semantic-contig-boundary",
+      "error": "('Count mismatch', 'NCG', 1, 0)"
+    },
+    {
+      "name": "semantic-absent",
+      "error": "('Count mismatch', 'ACGTN', 1, 0)"
+    },
+    {
+      "name": "negative-count",
+      "error": "Invalid literal query/count"
+    },
+    {
+      "name": "boolean-count",
+      "error": "Invalid literal query/count"
+    },
+    {
+      "name": "nonintegral-count",
+      "error": "Invalid literal query/count"
+    },
+    {
+      "name": "empty-query",
+      "error": "Invalid literal query/count"
+    },
+    {
+      "name": "invalid-alphabet",
+      "error": "Invalid literal query/count"
+    },
+    {
+      "name": "wrong-hash",
+      "error": "Dataset identity mismatch"
+    },
+    {
+      "name": "empty-certificate",
+      "error": "Empty certificate"
+    },
+    {
+      "name": "outside-data-path",
+      "error": "Dataset must be under data/"
+    }
+  ],
+  "native_methods": {
+    "rank2a": [
+      3,
+      6,
+      4,
+      1,
+      0,
+      0
+    ],
+    "persisted8": [
+      3,
+      6,
+      4,
+      1,
+      0,
+      0
+    ]
+  },
+  "positive_certificate": {
+    "passed": true,
+    "queries": 6,
+    "dataset_sha256": "c7ed16bf861b7cc13c1c689d0561a1c3a61a00e06caf3afa4772af1085139568"
+  },
+  "passed": true
+}

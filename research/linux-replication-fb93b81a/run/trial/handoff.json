@@ -1,0 +1,35 @@
+{
+  "kind": "bounded author/contributor software-index replication",
+  "case": "AL123456.3",
+  "seed": 334403228604265480411255179985668259939,
+  "samples_seconds_per_query": {
+    "rank2a": [
+      3.6380095087795284e-05,
+      2.8362658842667645e-05,
+      3.6891305867089506e-05,
+      2.7762251956315308e-05,
+      2.9917770606356072e-05
+    ],
+    "persisted8": [
+      1.831980885517802e-05,
+      1.860522059038939e-05,
+      1.8038831345335233e-05,
+      1.9464711772789266e-05,
+      3.110197545074876e-05
+    ]
+  },
+  "median_seconds_per_query": {
+    "rank2a": 2.9917770606356072e-05,
+    "persisted8": 1.860522059038939e-05
+  },
+  "verified": {
+    "passed": true,
+    "queries": 102,
+    "dataset_sha256": "d415b78129285dae5effd3a658fa52b22d34c1eca2668b7ca6bcd33ee972a857"
+  },
+  "elapsed_seconds": 24.539657412969973,
+  "novelty_claim": false,
+  "workload_limit": "Fresh generated queries on an exposed public corpus; warm throughput only",
+  "contributor_provenance": "Codex AI agent (gpt-6-astra), no prior project involvement. Author-checked contributor replication; no independent human domain review. Session seed fb93b81a026a774403a628358217c063. See ../../README.md and ../environment.json. This metadata field was filled after generation; raw generated output is retained in ../trial.log.",
+  "scientific_review": "pending"
+}
