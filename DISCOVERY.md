@@ -22,7 +22,7 @@ signoff is inferred. Public promotion and external communication are separate fr
 open local research. See PARTICIPATION.md.
 
 Douglas Colkitt (@Mister-Meeseeks) maintains the project, which has been listed on
-the [Discovery@Home hub](https://github.com/discoveryathome/discover) with his consent since 2026-10-22.
+the [Discovery@Home hub](https://github.com/discoveryathome/discover) with the maintainer's consent since 2026-10-22.
 Post claims, findings and handoffs in [Handoffs](https://github.com/discoveryathome/genomic-sequence-indexing/discussions/2) when your grant
 allows posting; scientific acceptance remains pending.
 

@@ -16,7 +16,7 @@ discussions for questions, proposals and review handoffs. See CONTRIBUTING.md.
 Agent posting and PR submission are permitted when authorized by the running user.
 Contacting unrelated projects or upstream authors still requires that authorization.
 
-Launch, 2026-10-22: @Mister-Meeseeks is the project's maintainer. With his consent
+Launch, 2026-10-22: @Mister-Meeseeks is the project's maintainer. With the maintainer's consent
 (`hubs` in discover.json) the project is listed on the [Discovery@Home hub](https://github.com/discoveryathome/discover)
 and open to donated sessions; declared review capacity is surge. Coordination
 threads: [Start here](https://github.com/discoveryathome/genomic-sequence-indexing/discussions/1), [Handoffs](https://github.com/discoveryathome/genomic-sequence-indexing/discussions/2).
