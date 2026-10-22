@@ -1,0 +1,9 @@
+{
+  "recorded_at": "2026-10-22T20:31:16Z",
+  "reason": "The original fixed 64-position sample passed, but all 64 counts were one. Preserve that initial result and test repeated-key paths without redrawing the sample.",
+  "initial_evidence": "evidence/initial/results.json",
+  "additional_check": "Count every canonical key in the fixed 100000-query prefix while scanning all forward reference windows, then compare all three native count vectors for the entire ordered prefix against that tally.",
+  "repeated_key_control": "Retain the first repeated key in prefix order and its original prefix ordinals; independently count it with the unchanged direct oracle and separate certificate checker.",
+  "unchanged": "Original seed, source, k, prefix, 64 sampled positions, native implementations, oracle and memory target; no timing comparison or production-trace claim.",
+  "evidence_limit": "The forward canonical tally shares the window generator with query extraction. Only the original 64 sampled keys plus the fixed repeated key receive independent direct-string and certificate checks."
+}

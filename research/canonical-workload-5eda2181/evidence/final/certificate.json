@@ -1,0 +1,454 @@
+{
+  "dataset": "data/development_ecoli.fasta",
+  "dataset_sha256": "9bc123f024686fa78e3ebed62f95af2d98a267fc81a599fb072f3a51861ff620",
+  "queries": [
+    {
+      "ordinal": 2034,
+      "record": 0,
+      "start": 2034,
+      "sequence": "GTGGAAACCTTCGCGCAGGAA",
+      "count": 1
+    },
+    {
+      "ordinal": 3351,
+      "record": 0,
+      "start": 3351,
+      "sequence": "AAAATAGCCCTGGCTTCTGCC",
+      "count": 1
+    },
+    {
+      "ordinal": 4433,
+      "record": 0,
+      "start": 4433,
+      "sequence": "CGCAGGAGACGCGCAACCAGC",
+      "count": 1
+    },
+    {
+      "ordinal": 4735,
+      "record": 0,
+      "start": 4735,
+      "sequence": "ACCACGCAACAGACAATGCGT",
+      "count": 1
+    },
+    {
+      "ordinal": 6632,
+      "record": 0,
+      "start": 6632,
+      "sequence": "CCATTGCCAGTGATTATCTAC",
+      "count": 1
+    },
+    {
+      "ordinal": 9026,
+      "record": 0,
+      "start": 9026,
+      "sequence": "TCTTACACCGGCGAAGTGAAA",
+      "count": 1
+    },
+    {
+      "ordinal": 11083,
+      "record": 0,
+      "start": 11083,
+      "sequence": "CACGGTAAATTGTATCGGGCC",
+      "count": 1
+    },
+    {
+      "ordinal": 11372,
+      "record": 0,
+      "start": 11372,
+      "sequence": "ATTCTGGCGTTAGTCGTCGCC",
+      "count": 1
+    },
+    {
+      "ordinal": 12603,
+      "record": 0,
+      "start": 12603,
+      "sequence": "GATGCTCAGCGTCAGGCAACC",
+      "count": 1
+    },
+    {
+      "ordinal": 13777,
+      "record": 0,
+      "start": 13777,
+      "sequence": "GCGACCATCTGCTGCACAGCA",
+      "count": 1
+    },
+    {
+      "ordinal": 14645,
+      "record": 0,
+      "start": 14645,
+      "sequence": "AACCATGACAGGTCGGACAAG",
+      "count": 1
+    },
+    {
+      "ordinal": 14756,
+      "record": 0,
+      "start": 14756,
+      "sequence": "CATGACCATGACATTTGTTGC",
+      "count": 1
+    },
+    {
+      "ordinal": 18656,
+      "record": 0,
+      "start": 18656,
+      "sequence": "AGGACGGTTTACCGGGGAGCC",
+      "count": 1
+    },
+    {
+      "ordinal": 19060,
+      "record": 0,
+      "start": 19060,
+      "sequence": "CCGCAGTGGTAGAAGGCGAGC",
+      "count": 1
+    },
+    {
+      "ordinal": 19441,
+      "record": 0,
+      "start": 19441,
+      "sequence": "CATATGCATAAAGCGTTGGGG",
+      "count": 1
+    },
+    {
+      "ordinal": 21502,
+      "record": 0,
+      "start": 21502,
+      "sequence": "CAAGCCCTGTAACAGCGCGCG",
+      "count": 1
+    },
+    {
+      "ordinal": 27490,
+      "record": 0,
+      "start": 27490,
+      "sequence": "GCTGTGCCACTGGTACGCGCA",
+      "count": 1
+    },
+    {
+      "ordinal": 29307,
+      "record": 0,
+      "start": 29307,
+      "sequence": "CAAAACATGTAATTTTTGGCA",
+      "count": 1
+    },
+    {
+      "ordinal": 33173,
+      "record": 0,
+      "start": 33173,
+      "sequence": "CGTGCACTCCGGTGACTCCGC",
+      "count": 1
+    },
+    {
+      "ordinal": 35724,
+      "record": 0,
+      "start": 35724,
+      "sequence": "AGCGGCGGTGTGCTGCGTCTG",
+      "count": 1
+    },
+    {
+      "ordinal": 37225,
+      "record": 0,
+      "start": 37225,
+      "sequence": "AAGCGCAGGTTGTAATGGGTA",
+      "count": 1
+    },
+    {
+      "ordinal": 38664,
+      "record": 0,
+      "start": 38664,
+      "sequence": "CCCAGGCCTTTAGTGGTTACC",
+      "count": 1
+    },
+    {
+      "ordinal": 39139,
+      "record": 0,
+      "start": 39139,
+      "sequence": "AGCGCATGACTGCCGGATGCG",
+      "count": 1
+    },
+    {
+      "ordinal": 39735,
+      "record": 0,
+      "start": 39735,
+      "sequence": "ACCTTTGACGACGTGGAACTG",
+      "count": 1
+    },
+    {
+      "ordinal": 39826,
+      "record": 0,
+      "start": 39826,
+      "sequence": "ATATCAACAAACCATTCGGTG",
+      "count": 1
+    },
+    {
+      "ordinal": 40462,
+      "record": 0,
+      "start": 40462,
+      "sequence": "ACCATAATGTTGACGAAGAAC",
+      "count": 1
+    },
+    {
+      "ordinal": 43809,
+      "record": 0,
+      "start": 43809,
+      "sequence": "AAGAGAACATTGCGCTGGCAG",
+      "count": 1
+    },
+    {
+      "ordinal": 44082,
+      "record": 0,
+      "start": 44082,
+      "sequence": "ACGCCGTGAAGATCCTTCCGG",
+      "count": 1
+    },
+    {
+      "ordinal": 47272,
+      "record": 0,
+      "start": 47272,
+      "sequence": "CGCATGGGAATGATGCGGATA",
+      "count": 1
+    },
+    {
+      "ordinal": 47479,
+      "record": 0,
+      "start": 47479,
+      "sequence": "GATAAAGTTTTCTCCCACGGC",
+      "count": 1
+    },
+    {
+      "ordinal": 47802,
+      "record": 0,
+      "start": 47802,
+      "sequence": "ATCTCGGTTCGGCAGCGCTGA",
+      "count": 1
+    },
+    {
+      "ordinal": 55482,
+      "record": 0,
+      "start": 55482,
+      "sequence": "ACTACTCTGGCCTGTTCCGGG",
+      "count": 1
+    },
+    {
+      "ordinal": 56726,
+      "record": 0,
+      "start": 56726,
+      "sequence": "AGATTCGCCCAGCCTTTCGGC",
+      "count": 1
+    },
+    {
+      "ordinal": 58405,
+      "record": 0,
+      "start": 58405,
+      "sequence": "CGATTTTTGAAAGTATATTTA",
+      "count": 1
+    },
+    {
+      "ordinal": 60203,
+      "record": 0,
+      "start": 60203,
+      "sequence": "GCACAAAGACAGCGTGATGAC",
+      "count": 1
+    },
+    {
+      "ordinal": 61418,
+      "record": 0,
+      "start": 61418,
+      "sequence": "ATGTGCCTTATCTGGAGAAAA",
+      "count": 1
+    },
+    {
+      "ordinal": 61798,
+      "record": 0,
+      "start": 61798,
+      "sequence": "CACCTGGTGGAACTTCGATCC",
+      "count": 1
+    },
+    {
+      "ordinal": 63681,
+      "record": 0,
+      "start": 63681,
+      "sequence": "CGAGTATCAGCGTAATGTGCC",
+      "count": 1
+    },
+    {
+      "ordinal": 64668,
+      "record": 0,
+      "start": 64668,
+      "sequence": "CCGACACGGCGGTTCGGTGGC",
+      "count": 1
+    },
+    {
+      "ordinal": 68084,
+      "record": 0,
+      "start": 68084,
+      "sequence": "GGGAGAAGGTGTGCAGCCACA",
+      "count": 1
+    },
+    {
+      "ordinal": 68842,
+      "record": 0,
+      "start": 68842,
+      "sequence": "GACTGGTTTAACGGCCGCCGC",
+      "count": 1
+    },
+    {
+      "ordinal": 70425,
+      "record": 0,
+      "start": 70425,
+      "sequence": "CACCAGATGGGCGTTAAACGA",
+      "count": 1
+    },
+    {
+      "ordinal": 77574,
+      "record": 0,
+      "start": 77574,
+      "sequence": "ATAAAAAAAACCAGCAGGTAT",
+      "count": 1
+    },
+    {
+      "ordinal": 77930,
+      "record": 0,
+      "start": 77930,
+      "sequence": "CACCACAGGTGATAAGCGTCA",
+      "count": 1
+    },
+    {
+      "ordinal": 78899,
+      "record": 0,
+      "start": 78899,
+      "sequence": "TATTGGGCTTACCTTGCAGCA",
+      "count": 1
+    },
+    {
+      "ordinal": 82639,
+      "record": 0,
+      "start": 82639,
+      "sequence": "CGGCGCATTCGCACACTCCTC",
+      "count": 1
+    },
+    {
+      "ordinal": 83088,
+      "record": 0,
+      "start": 83088,
+      "sequence": "GAAGATGCCGGGCGTACACCC",
+      "count": 1
+    },
+    {
+      "ordinal": 83972,
+      "record": 0,
+      "start": 83972,
+      "sequence": "CTGATGATTTGTATTGAATTA",
+      "count": 1
+    },
+    {
+      "ordinal": 85535,
+      "record": 0,
+      "start": 85535,
+      "sequence": "CCCCGTGTTTATGTCTCTGGC",
+      "count": 1
+    },
+    {
+      "ordinal": 88230,
+      "record": 0,
+      "start": 88230,
+      "sequence": "CCCCGATCTGGAGAACACCAG",
+      "count": 1
+    },
+    {
+      "ordinal": 89132,
+      "record": 0,
+      "start": 89132,
+      "sequence": "TTATTGATAAATGCTTTTAAA",
+      "count": 1
+    },
+    {
+      "ordinal": 89652,
+      "record": 0,
+      "start": 89652,
+      "sequence": "CTTTGCTGTCGAGATTGACTA",
+      "count": 1
+    },
+    {
+      "ordinal": 91439,
+      "record": 0,
+      "start": 91439,
+      "sequence": "ATGTTCTTCCTGACGTTTTGG",
+      "count": 1
+    },
+    {
+      "ordinal": 92153,
+      "record": 0,
+      "start": 92153,
+      "sequence": "AAAGGCCACCGCGTTGTTCAG",
+      "count": 1
+    },
+    {
+      "ordinal": 92293,
+      "record": 0,
+      "start": 92293,
+      "sequence": "GCGTAACCGTACCATCACCGA",
+      "count": 1
+    },
+    {
+      "ordinal": 94560,
+      "record": 0,
+      "start": 94560,
+      "sequence": "AAAGGCCATGAAGATTACCAG",
+      "count": 1
+    },
+    {
+      "ordinal": 96202,
+      "record": 0,
+      "start": 96202,
+      "sequence": "AAGCGCGGTACGCCGACCATG",
+      "count": 1
+    },
+    {
+      "ordinal": 96386,
+      "record": 0,
+      "start": 96386,
+      "sequence": "AGAAATACTTCCAACGAGCGA",
+      "count": 1
+    },
+    {
+      "ordinal": 96777,
+      "record": 0,
+      "start": 96777,
+      "sequence": "CCCATAAAGACCTGCGCCGGA",
+      "count": 1
+    },
+    {
+      "ordinal": 97624,
+      "record": 0,
+      "start": 97624,
+      "sequence": "GATCCATATGATCTTCAGTCA",
+      "count": 1
+    },
+    {
+      "ordinal": 97962,
+      "record": 0,
+      "start": 97962,
+      "sequence": "ACCAGTGAATGTGGTTAACGC",
+      "count": 1
+    },
+    {
+      "ordinal": 99531,
+      "record": 0,
+      "start": 99531,
+      "sequence": "AGCTCGAACCACCGTAACTGA",
+      "count": 1
+    },
+    {
+      "ordinal": 99713,
+      "record": 0,
+      "start": 99713,
+      "sequence": "CCATTAGATGGTGCGCAACCG",
+      "count": 1
+    },
+    {
+      "ordinal": 99914,
+      "record": 0,
+      "start": 99914,
+      "sequence": "CGTCAGGTTTGTACGCTTTCA",
+      "count": 1
+    }
+  ]
+}

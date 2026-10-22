@@ -1,0 +1,57 @@
+{
+  "base_commit": "e40473dc6737647068780cc23c090fa5765f1d3e",
+  "recorded_at": "2026-10-22T20:24:49.178Z",
+  "track": "workload",
+  "seed_hex": "5eda2181903384ad1a017421b2132463",
+  "seed_decimal": "126080031903520692497811457829816706147",
+  "claim": "https://github.com/discoveryathome/genomic-sequence-indexing/discussions/2#discussioncomment-19132161",
+  "question": "Specify a sourced canonical 21-mer sequence-query workload and test its exact-count semantic compatibility with the pilot.",
+  "scope": "Define and author-check a source-backed canonical 21-mer sequence-query workload, preserving ordered repeated queries and explicit N/boundary rules; public E. coli reference as a replay fixture, no production-trace or speedup claim",
+  "upstream": {
+    "software": "Jellyfish",
+    "commit": "43b1ab27abdb8c9399c386cc998bb9fd33648412",
+    "mode": "query sequence inputs (-s) against a canonical exact binary database, not a Bloom counter"
+  },
+  "reference": {
+    "path": "data/development_ecoli.fasta",
+    "sha256": "9bc123f024686fa78e3ebed62f95af2d98a267fc81a599fb072f3a51861ff620",
+    "source_accession": "U00096.3",
+    "status": "Previously exposed repository reference fixture; not a new corpus or production trace."
+  },
+  "stream": {
+    "k": 21,
+    "step": 1,
+    "canonical": "lexicographic minimum of ACGT word and its reverse complement",
+    "order": "FASTA record order, increasing zero-based within-record start",
+    "repeats": "Keep every occurrence in original order, including repeated canonical words",
+    "ambiguous_bases": "Skip any window containing non-ACGT; do not bridge ambiguity or record boundaries",
+    "fixture_prefix_queries": 100000,
+    "oracle_sample_queries": 64,
+    "selection": "Deterministic sample of prefix positions using the session seed, emitted in positional order"
+  },
+  "checks": [
+    "tiny explicit overlap, canonical, ambiguity-reset and contig-boundary examples",
+    "positive canonical-count equality for odd k",
+    "even-k palindromic negative control demonstrating factor-of-two incompatibility",
+    "64 prefix sample counts in rank2a, persisted8 and suffix_array versus direct oracle, forward canonical-window tally and certificate checker",
+    "source hashes, full repository suite, no changes to frozen records"
+  ],
+  "resources": {
+    "proposed_process_memory_budget_bytes": 268435456,
+    "meaning": "Benchmark-adapter acceptance target, not a measured production application limit.",
+    "prefix_limit": 100000,
+    "timing_claim": "No throughput tuning, speedup or break-even experiment; measure generation/check cost and peak whole-process RSS only."
+  },
+  "prior_exposure": "Parent agent authored PR #5 in the immediately preceding session and read the same repository's public data/status. Delegated source review is part of this author session, not independent scientific review.",
+  "time_budget_minutes": 60,
+  "start_utc": "2026-10-22T20:17:58Z",
+  "stop_new_work_utc": "2026-10-22T21:02:58Z",
+  "non_goals": [
+    "Production-trace claim",
+    "Jellyfish executable benchmark",
+    "Real read or biological-effect inference",
+    "New corpus",
+    "Index algorithm change",
+    "Scientific acceptance"
+  ]
+}
