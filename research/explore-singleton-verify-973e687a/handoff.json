@@ -1,0 +1,255 @@
+{
+ "kind": "exploration: new count method (singleton locate-and-verify on persisted8), author-checked",
+ "task_card": "replication (drawn from hub seed 973e687a7a4503011501a460be45a9ea as decimal); scope changed to a new method under focus explore",
+ "case": "AL123456.3",
+ "base_commit": "e40473dc6737647068780cc23c090fa5765f1d3e",
+ "seeds": {
+  "dev": 2051343105,
+  "eval": 2537449594,
+  "post_evaluation_diagnostic": 352429152
+ },
+ "frozen_config": "sv16_d4",
+ "hashes": {
+  "sv.c": "6aea72d41da3b4efaf76e786eaab24183665c718a201cc57ea8f7fa5ab75d7d3",
+  "sv_run.py": "95cc6a33146234ac99233f848e1a4fa84fe75d9589e266b1f52e99c74f672f84",
+  "protocol.json": "c53e5757a82005b4a55d7ec7c0d1c912fb67e0e69e0b05a1a6671da97b943590",
+  "freeze.json": "8433e662db12551663e0beb3de09733dbe5a5a49843b6fbc1d4724c3f59e329c"
+ },
+ "eval_panel": {
+  "queries": 102,
+  "median_us_per_query": {
+   "rank2a": {
+    "all": 14.024383306284163,
+    "len20-absent": 2.324262459296733,
+    "len31-present": 8.664099732413888,
+    "len75-present": 20.824169041588902,
+    "len150-absent": 3.030337393283844,
+    "len20-present": 6.249043872230686,
+    "len75-absent": 3.143187495879829,
+    "len150-present": 38.73239365930203,
+    "len31-absent": 3.041612944798544,
+    "probe-absent": 1.3350159861147404
+   },
+   "rank2a_AA": {
+    "all": 14.440698021858491,
+    "len20-absent": 2.46777490247041,
+    "len31-present": 9.299112571170554,
+    "len75-present": 21.005824964959174,
+    "len150-absent": 2.8149377612862736,
+    "len20-present": 5.805956243420951,
+    "len75-absent": 3.376125096110627,
+    "len150-present": 40.3067435399862,
+    "len31-absent": 3.610312705859542,
+    "probe-absent": 1.2527006523062785
+   },
+   "persisted8": {
+    "all": 11.078118661637692,
+    "len20-absent": 0.5753376171924174,
+    "len31-present": 5.704825161956251,
+    "len75-present": 17.311474948655814,
+    "len150-absent": 0.8135248208418489,
+    "len20-present": 3.2174499210668728,
+    "len75-absent": 1.212912320625037,
+    "len150-present": 37.87496898439713,
+    "len31-absent": 0.8427123248111457,
+    "probe-absent": 0.40459951075414813
+   },
+   "suffix_array": {
+    "all": 0.8343578562797869,
+    "len20-absent": 0.814913073554635,
+    "len31-present": 0.7317561539821327,
+    "len75-present": 0.7208625902421772,
+    "len150-absent": 0.70094974944368,
+    "len20-present": 0.7145314157241955,
+    "len75-absent": 0.7054622983559966,
+    "len150-present": 0.8898688975023106,
+    "len31-absent": 0.8157876436598599,
+    "probe-absent": 0.4642002750188112
+   },
+   "sv16_d4": {
+    "all": 3.253737254543047,
+    "len20-absent": 0.6338254024740309,
+    "len31-present": 4.500181239563972,
+    "len75-present": 4.54720611742232,
+    "len150-absent": 0.9246119589079171,
+    "len20-present": 3.223650128347799,
+    "len75-absent": 1.2516124115791172,
+    "len150-present": 4.7841498599154875,
+    "len31-absent": 0.9178504114970565,
+    "probe-absent": 0.42280007619410753
+   }
+  },
+  "median_paired_ratio_vs_persisted8": {
+   "all": 0.29630475897331787,
+   "len20-absent": 0.9321608838273002,
+   "len31-present": 0.76947070641078,
+   "len75-present": 0.26184487962295844,
+   "len150-absent": 1.085081566172986,
+   "len20-present": 1.040969912792089,
+   "len75-absent": 1.1281860490563844,
+   "len150-present": 0.13521184616261409,
+   "len31-absent": 1.1004410543431988,
+   "probe-absent": 1.0580648158983432
+  },
+  "mismatches_vs_persisted8": {
+   "rank2a": 0,
+   "rank2a_AA": 0,
+   "persisted8": 0,
+   "suffix_array": 0,
+   "sv16_d4": 0
+  }
+ },
+ "eval_groups": {
+  "queries": 966,
+  "group_sizes": {
+   "len20-absent": 80,
+   "len31-present": 160,
+   "len75-present": 160,
+   "len150-absent": 80,
+   "len20-present": 160,
+   "len75-absent": 80,
+   "len150-present": 160,
+   "len31-absent": 80,
+   "probe-absent": 6
+  },
+  "median_paired_ratio_vs_persisted8": {
+   "rank2a": {
+    "all": 1.253663254193923,
+    "len20-absent": 3.306529775272775,
+    "len31-present": 1.4922108910797456,
+    "len75-present": 1.1497950057373905,
+    "len150-absent": 3.1697978902837955,
+    "len20-present": 1.8625851666531883,
+    "len75-absent": 3.1163332211521797,
+    "len150-present": 1.1110506423185025,
+    "len31-absent": 3.389179455978912,
+    "probe-absent": 2.9314116621310995
+   },
+   "rank2a_AA": {
+    "all": 1.2071519898116985,
+    "len20-absent": 3.310436620496029,
+    "len31-present": 1.4585147554221989,
+    "len75-present": 1.1025737531608368,
+    "len150-absent": 3.121179812492327,
+    "len20-present": 1.8520420507951412,
+    "len75-absent": 3.1429434642468292,
+    "len150-present": 1.0936559070570924,
+    "len31-absent": 3.4728324617668016,
+    "probe-absent": 2.9668795901822502
+   },
+   "persisted8": {
+    "all": 1.0,
+    "len20-absent": 1.0,
+    "len31-present": 1.0,
+    "len75-present": 1.0,
+    "len150-absent": 1.0,
+    "len20-present": 1.0,
+    "len75-absent": 1.0,
+    "len150-present": 1.0,
+    "len31-absent": 1.0,
+    "probe-absent": 1.0
+   },
+   "suffix_array": {
+    "all": 0.15279095609414356,
+    "len20-absent": 0.7171375717648275,
+    "len31-present": 0.14930592951424987,
+    "len75-present": 0.04345305709117876,
+    "len150-absent": 0.7019377181259556,
+    "len20-present": 0.2739035116217323,
+    "len75-absent": 0.5444162551139611,
+    "len150-present": 0.02119733871084134,
+    "len31-absent": 0.7492054308465633,
+    "probe-absent": 1.1916409239091257
+   },
+   "sv16_d4": {
+    "all": 0.3574200165743396,
+    "len20-absent": 1.0648124212305223,
+    "len31-present": 0.9594304100501959,
+    "len75-present": 0.30635887032624864,
+    "len150-absent": 1.0126123002832188,
+    "len20-present": 1.06082728499575,
+    "len75-absent": 1.1723209925193134,
+    "len150-present": 0.16055299099233128,
+    "len31-absent": 1.017873415061066,
+    "probe-absent": 1.0629760852674888
+   }
+  },
+  "mismatches_vs_persisted8": {
+   "rank2a": 0,
+   "rank2a_AA": 0,
+   "persisted8": 0,
+   "suffix_array": 0,
+   "sv16_d4": 0
+  }
+ },
+ "pre_registered_criteria": {
+  "speed_ge_1.3x_eval_panel": "pass",
+  "zero_mismatches": "pass",
+  "no_eval_group_regressed_gt_5pct": "fail (len20-present 1.061, absent 1.065/1.018/1.172/1.013, probes 1.063)"
+ },
+ "outcome": "partial",
+ "post_evaluation_diagnostic": {
+  "note": "post-evaluation diagnostic, not selection or evaluation evidence",
+  "median_paired_ratio_vs_persisted8": {
+   "persisted8": {
+    "absent20": 1.0,
+    "absent31": 1.0,
+    "absent75": 1.0,
+    "absent150": 1.0,
+    "present20": 1.0,
+    "present21rc": 1.0
+   },
+   "persisted8_AA": {
+    "absent20": 1.000293466231153,
+    "absent31": 1.0128202381163753,
+    "absent75": 1.0029017241816056,
+    "absent150": 0.9971643309556273,
+    "present20": 0.9972317836942907,
+    "present21rc": 1.0080997082168053
+   },
+   "sv16_d4": {
+    "absent20": 0.9963415210830753,
+    "absent31": 1.0208449034347715,
+    "absent75": 1.0225683303126814,
+    "absent150": 1.0081281097739645,
+    "present20": 1.0009536366633385,
+    "present21rc": 0.9989022457496374
+   }
+  },
+  "mismatches": {
+   "persisted8": 0,
+   "persisted8_AA": 0,
+   "sv16_d4": 0
+  },
+  "load_average": [
+   3.1787109375,
+   3.50830078125,
+   4.02490234375
+  ]
+ },
+ "memory_bytes": {
+  "sv_added_s16": 5583376,
+  "sv_added_s32": 4480496,
+  "persisted8_table": 1048600,
+  "rank2a_index": 5436432,
+  "suffix_array_control": 44115346
+ },
+ "construction_seconds": "4.3-5.2, not persisted (every load pays it)",
+ "verified": {
+  "tool": "tools/verify_count.py certificate/candidate.json",
+  "passed": true,
+  "queries": 102
+ },
+ "machine": "Linux-7.2.5-200.fc44.x86_64-x86_64-with-glibc2.39",
+ "novelty_claim": false,
+ "workload_limit": "Fresh generated queries on an exposed public corpus; warm in-process throughput only; shared desktop at load 3-8",
+ "contributor_provenance": "Session donated by VibeCodyH (GitHub); run by Claude (Anthropic, claude-opus-5-5); no prior involvement",
+ "evidence_level": "author-checked",
+ "scientific_review": "pending",
+ "requested_next": [
+  "persist the sv structures and measure fresh-process break-even",
+  "put a persisted8 A/A control in the protocol and re-test the absent/short groups",
+  "pooled corpus and quiet-machine timing",
+  "verify 2-4 row intervals directly"
+ ]
+}

@@ -1,0 +1,35 @@
+{
+  "kind": "bounded author/contributor software-index replication",
+  "case": "AL123456.3",
+  "seed": 419,
+  "samples_seconds_per_query": {
+    "rank2a": [
+      1.4651293167844414e-05,
+      1.4875834298721861e-05,
+      1.2528337309977004e-05,
+      1.3014038239477897e-05,
+      1.2992949033265604e-05
+    ],
+    "persisted8": [
+      1.14014088609895e-05,
+      9.747642131211857e-06,
+      1.0910432320088147e-05,
+      1.0300096119845322e-05,
+      9.821820547621625e-06
+    ]
+  },
+  "median_seconds_per_query": {
+    "rank2a": 1.3014038239477897e-05,
+    "persisted8": 1.0300096119845322e-05
+  },
+  "verified": {
+    "passed": true,
+    "queries": 102,
+    "dataset_sha256": "d415b78129285dae5effd3a658fa52b22d34c1eca2668b7ca6bcd33ee972a857"
+  },
+  "elapsed_seconds": 10.744786388997454,
+  "novelty_claim": false,
+  "workload_limit": "Fresh generated queries on an exposed public corpus; warm throughput only",
+  "contributor_provenance": "Fill in identity/model and prior involvement before review",
+  "scientific_review": "pending"
+}
