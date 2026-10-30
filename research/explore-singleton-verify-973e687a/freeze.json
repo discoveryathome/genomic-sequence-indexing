@@ -1,0 +1,30 @@
+{
+ "frozen_at_utc": "2026-10-30T09:41:36Z",
+ "rule": "Pre-registered rule: fastest dev whole-panel median among sv configs whose\n    median paired ratio vs persisted8 is <= 1.05 on every length x presence group\n    (the six fixed probes are not a length group and are reported only).",
+ "candidates": {
+  "sv16_d2": {
+   "all_median_us": 3.668315838549988,
+   "worst_group_ratio": 1.390091125227391,
+   "eligible": false
+  },
+  "sv16_d4": {
+   "all_median_us": 4.062026708510244,
+   "worst_group_ratio": 1.0408508495794095,
+   "eligible": true
+  },
+  "sv32_d2": {
+   "all_median_us": 4.897032813535421,
+   "worst_group_ratio": 1.1824939704940844,
+   "eligible": false
+  },
+  "sv32_d4": {
+   "all_median_us": 5.2486269158266845,
+   "worst_group_ratio": 1.0991203741394542,
+   "eligible": false
+  }
+ },
+ "selected": "sv16_d4",
+ "sv_source_sha256": "6aea72d41da3b4efaf76e786eaab24183665c718a201cc57ea8f7fa5ab75d7d3",
+ "library_sha256": "351977684b132f4df7a92dbc2249914cd1886acaa20859339b94ba7bb233b71a",
+ "harness_sha256": "95cc6a33146234ac99233f848e1a4fa84fe75d9589e266b1f52e99c74f672f84"
+}

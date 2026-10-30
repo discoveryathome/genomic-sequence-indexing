@@ -1,0 +1,80 @@
+{
+ "kind": "post-evaluation diagnostic, not selection or evaluation evidence",
+ "seed": 352429152,
+ "libraries": {
+  "sv.dylib": "351977684b132f4df7a92dbc2249914cd1886acaa20859339b94ba7bb233b71a"
+ },
+ "rounds": 15,
+ "reps": 50,
+ "queries_per_group": 400,
+ "present_counts": {
+  "absent20": 0,
+  "absent31": 0,
+  "absent75": 0,
+  "absent150": 0,
+  "present20": 400,
+  "present21rc": 400
+ },
+ "mismatches_vs_persisted8": {
+  "persisted8": 0,
+  "persisted8_AA": 0,
+  "sv16_d4": 0
+ },
+ "median_us": {
+  "persisted8": {
+   "absent20": 1.1710377497365698,
+   "absent31": 1.13398679823149,
+   "absent75": 1.1351239489158615,
+   "absent150": 1.1507699498906732,
+   "present20": 3.2632275513606146,
+   "present21rc": 3.5216598014812917
+  },
+  "persisted8_AA": {
+   "absent20": 1.175354901351966,
+   "absent31": 1.1312576505588368,
+   "absent75": 1.1409699509385973,
+   "absent150": 1.150671299546957,
+   "present20": 3.2633838505716994,
+   "present21rc": 3.575504952459596
+  },
+  "sv16_d4": {
+   "absent20": 1.1699541995767504,
+   "absent31": 1.151890101027675,
+   "absent75": 1.1602273007156327,
+   "absent150": 1.1646601487882435,
+   "present20": 3.2743164512794465,
+   "present21rc": 3.53745209868066
+  }
+ },
+ "median_paired_ratio_vs_persisted8": {
+  "persisted8": {
+   "absent20": 1.0,
+   "absent31": 1.0,
+   "absent75": 1.0,
+   "absent150": 1.0,
+   "present20": 1.0,
+   "present21rc": 1.0
+  },
+  "persisted8_AA": {
+   "absent20": 1.000293466231153,
+   "absent31": 1.0128202381163753,
+   "absent75": 1.0029017241816056,
+   "absent150": 0.9971643309556273,
+   "present20": 0.9972317836942907,
+   "present21rc": 1.0080997082168053
+  },
+  "sv16_d4": {
+   "absent20": 0.9963415210830753,
+   "absent31": 1.0208449034347715,
+   "absent75": 1.0225683303126814,
+   "absent150": 1.0081281097739645,
+   "present20": 1.0009536366633385,
+   "present21rc": 0.9989022457496374
+  }
+ },
+ "load_average": [
+  3.1787109375,
+  3.50830078125,
+  4.02490234375
+ ]
+}

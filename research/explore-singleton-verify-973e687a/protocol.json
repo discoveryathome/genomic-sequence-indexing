@@ -1,0 +1,49 @@
+{
+  "kind": "pre-registered bounded exploration protocol (written before candidate code)",
+  "written_at_utc": "2026-10-30T09:06Z",
+  "base_commit": "e40473dc6737647068780cc23c090fa5765f1d3e",
+  "author": "Claude (Anthropic, model claude-opus-5-5) in a session donated by VibeCodyH (GitHub); no prior involvement in this project",
+  "task_draw": {
+    "hub_seed_hex": "973e687a7a4503011501a460be45a9ea",
+    "picker": "python tools/pick.py --seed <seed>",
+    "hex_seed_result": "rejected: argument --seed: invalid int value (type=int); already reported in the open seed-format handoff from PR #5, not re-filed here",
+    "decimal_seed": "201037468843026663902234405966551820778 (int(hex, 16))",
+    "drawn_card": "replication: Produce one verified exact-count handoff"
+  },
+  "scope_change": "The person running the session set focus 'explore' (prioritize a genuinely new approach, priced against a favorable best case first). The drawn replication card's deliverable (candidate.json + handoff.json passing tools/verify_count.py, equal counts acceptable) is kept, but the candidate is a new count method rather than an unchanged rank2a/persisted8 replay. The positive-control replay of the card's first experiment (seed 419) is kept separately under positive-control/.",
+  "candidate": {
+    "name": "sv8 (singleton locate-and-verify on top of persisted8)",
+    "idea": "Run persisted8 backward search unchanged. When the suffix interval has been a single row for d consecutive checks and more than s/2+1 pattern symbols remain, locate that row with a text-position-sampled suffix array (at most s-1 LF calls via rld_rank1a) and compare the remaining prefix directly against stored text in the same multi-string BWT coordinate space (separators and N stored as exceptions). Count is then 1 or 0.",
+    "novelty_claim": false,
+    "status_of_technique": "Known components (FM-index backward search, text-position SA sampling for locate, plain-text verification). New to this project's records; measured here, not claimed as a new algorithm.",
+    "grid": {"s": [16, 32], "d": [2, 4]},
+    "candidate_sha256": "filled at freeze in freeze.json"
+  },
+  "baselines": ["rank2a", "rank2a_AA (second independent rank2a load, A/A control)", "persisted8", "suffix_array (uncompressed control)"],
+  "objective": "warm seconds/query (native count_batch, reps=10, randomized method order), reported with index bytes, construction time and load time separately",
+  "error_constraint": "zero count mismatches against persisted8 and against the separate direct witness checker tools/verify_count.py",
+  "development": {
+    "corpus": "data/round2/AL123456.3.fasta (exposed public corpus)",
+    "generator": "src/trial.py queries(seqs, seed, n=960)",
+    "seed": 2051343105,
+    "seed_derivation": "int(hex_seed[8:16], 16)"
+  },
+  "selection_rule": "Among the 4 grid configs, pick the fastest median whole-panel warm time on development, excluding any config whose median paired ratio versus persisted8 regresses by more than 5% on any development group (length x present/absent).",
+  "evaluation": {
+    "corpus": "data/round2/AL123456.3.fasta",
+    "generator": "src/trial.py queries(seqs, seed, n=96) as in tools/contribute.py (102 queries) for the certificate; n=960 with the same seed for per-group timing",
+    "seed": 2537449594,
+    "seed_derivation": "int(hex_seed[0:8], 16)",
+    "exposure_note": "Fresh generated queries on an already exposed corpus: within-corpus evaluation, not an independent holdout."
+  },
+  "pass_threshold": "selected config >= 1.3x faster than persisted8 on the median warm time of the 102-query evaluation panel, zero mismatches, and no evaluation group regressed by more than 5% in median paired ratio",
+  "correctness_controls": [
+    "agreement with persisted8 on every development and evaluation query",
+    "tools/verify_count.py on candidate.json",
+    "locate-path stress on the 10-contig repetitive panel (contains literal N runs and contig boundaries): present substrings at string starts/ends on both strands, one-mismatch-in-prefix variants, N-containing queries, boundary-crossing queries",
+    "existing repository tests (python tools/check.py)"
+  ],
+  "resource_limits": "shared desktop under the owner's capped launcher (one job slot, 2 cores, 12 GiB); load average about 5.4 at start, so timings are shared-machine measurements",
+  "stopping_rule": "One bounded pivot if the best-case model is not reproduced. Stop new work at 11:52 UTC (75% of a 240-minute budget) and report whatever state is reached, including a failed threshold.",
+  "compiler": "host gcc 16.2.1, -O3 -fPIC -shared, no fast-math; library loaded from an Ubuntu 24.04 container Python 3.12.3 venv"
+}
